@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:science_buddy/cards.dart';
+import 'package:science_buddy/util/buttons.dart';
+import 'package:science_buddy/util/cards.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class HOME extends StatelessWidget {
@@ -143,43 +144,33 @@ class HOME extends StatelessWidget {
                 const SizedBox(height:  23,),
 
                 
-                Row(children:  [
+             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: const [
+              BUTTONS(
+                iconimagepath:"assets/images/brainmap.png", 
+                icontext: "BRAIN MAP",
+               ),
 
-                  //cheatsheet
-      // ignore: avoid_unnecessary_containers
-      Container(  
-        height : 80 ,
-      padding : const EdgeInsets.all(7  ) ,
-      decoration : BoxDecoration (
-  color : const Color.fromARGB(255, 229, 226, 226) ,
-  borderRadius : BorderRadius.circular ( 20 ) ,
-  boxShadow: [
-    BoxShadow(
-      color: Colors.grey.shade400,
-      blurRadius: 23,
-      spreadRadius: 9
-
-    )
-  ]
-) , // BoxDecoration
-        child: Center(
-          child: Image.asset("assets/images/brainmap.png"),
-      ),
-
-      )
+              BUTTONS(iconimagepath: "assets/images/notes1.png", 
+              icontext: "NOTES")
 
 
-
-                  //notes
-
+             ],),
 
 
+             const SizedBox(height: 25,),
+              Column(children: [
 
-                //xyz
-
+                Row(children: [
+                  Container(
+                    height: 80,
+                    child: Image.asset("assets/images/physics.png"),
+                  )
                 ],)
 
 
+              ],)              
 
 
 

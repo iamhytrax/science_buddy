@@ -151,7 +151,7 @@ class HOME extends StatelessWidget {
         height : 80 ,
       padding : const EdgeInsets.all(7  ) ,
       decoration : BoxDecoration (
-  color : Color.fromARGB(255, 229, 226, 226) ,
+  color : const Color.fromARGB(255, 229, 226, 226) ,
   borderRadius : BorderRadius.circular ( 20 ) ,
   boxShadow: [
     BoxShadow(

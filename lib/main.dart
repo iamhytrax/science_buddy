@@ -1,3 +1,10 @@
+//how to use inkell navigation?
+
+
+
+
+
+
 import 'package:flutter/material.dart';
 import 'package:science_buddy/home.dart';
 
@@ -22,3 +29,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
+//flutter build apk --split-per-abi
+

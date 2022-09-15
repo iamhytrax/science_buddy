@@ -22,11 +22,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
+      
       title: "science buddy",
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
+       
       home:  const HOME(),
+      theme: ThemeData(useMaterial3: true), 
       debugShowCheckedModeBanner: false,
       
 

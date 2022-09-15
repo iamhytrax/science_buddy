@@ -1,6 +1,8 @@
+
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:science_buddy/phy.dart';
+
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class MOB extends StatelessWidget {
@@ -10,418 +12,523 @@ class MOB extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-        backgroundColor: const Color.fromARGB(255, 233, 233, 233),
+       backgroundColor: Color.fromARGB(255, 197, 129, 2),
     
         //app title////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        body: SafeArea(
-            child: SingleChildScrollView(
-         // scrollDirection: Axis.vertical, 
-                     
+        body:  CustomScrollView(
+              slivers: [
+                SliverAppBar.large(
+                  backgroundColor: Color.fromARGB(255, 197, 129, 2),
+             //leading: const IconButton(
+             //  onPressed: {}{}, icon: Icons.abc
+             //  ),
+              title: const Text(
+                "Science Buddy",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 30 ,
+                  fontWeight: FontWeight.bold,
+                  
+                ),
+                
+              ),
+
             
-              child: Column(children: [   
-                Padding( 
-                  padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                  child: Row(
-                    children: const [
-                      SizedBox(
-                        height: 90,
-                      ),
-                      Text(
-                        "Science Buddy",
-                        style: TextStyle(
-                            fontSize: 26,
-                            fontWeight: FontWeight.bold,
-                            color: Color.fromARGB(255, 0, 0, 0)),
-                      ),
-                      
-                    ],
-                  ),
+               //actions: const [
+              //  IconButton(
+              //    onPressed: {} {}, icon: Icons.abc_rounded
+              //    )
+              //  ],
+
+
+              
+              ),
+              
+              
+              SliverToBoxAdapter(
+               
+              
+              child: Container(
+                
+                decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(50),
+                color: const Color.fromARGB(255, 203, 207, 203)
                 ),
+                
+                child: SingleChildScrollView(
+                       // scrollDirection: Axis.vertical, 
+                         
+                
+                  child: Column(children: [   
+                    const SizedBox(height:  40 ,),
+                   // Padding( 
+                   //   padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                   //   child: Row(
+                   //     children: const [
+                   //       SizedBox(
+                   //         height: 90,
+                   //       ),
+                   //       Text(
+                   //         "Science Buddy",
+                   //         style: TextStyle(
+                   //             fontSize: 26,
+                   //             fontWeight: FontWeight.bold,
+                   //             color: Color.fromARGB(255, 0, 0, 0)),
+                   //       ),
+                   //       
+                   //     ],
+                   //   ),
+                   // ),
+                   //       
+                    //cards
+                          
+                    ////////////////////////////////////////////////cards//////////////////////////////////////////////////////////////////////////////////////////////////////
+                          
+                   
+                    SizedBox(
                       
-                //cards
-                      
-                ////////////////////////////////////////////////cards//////////////////////////////////////////////////////////////////////////////////////////////////////
-                      
-                // ignore: sized_box_for_whitespace
-                Container(
-                  height: 150,
-                  child: PageView(
-                    controller: _controller,
-                    scrollDirection: Axis.horizontal,
-                    children: [
-                      InkWell(
-                        child: Container(
-                          width: 0,
-                          padding: const EdgeInsets.all(31),
-                          decoration: BoxDecoration(
-                              color: const Color.fromARGB(255, 255, 80, 80),
-                              borderRadius: BorderRadius.circular(50)),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: const [
-                              Text(
-                                'FORMULA',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                ),
-                              ),
-                              SizedBox(
-                                height: 11,
-                              ),
-                              Text("PHYSICS",
-                                  style:
-                                      TextStyle(fontSize: 30, color: Colors.white)),
-                              //  Row(
-                              //    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              //    children: const [
-                              //      // card number
-                              //      Text("wsd"),
-                              //      // card expiry date
-                              //      Text("awd"),
-                              //   ],
-                              // ),
-                            ],
-                          ),
-                        ),
-                        onTap: () => Navigator.of(context).pushAndRemoveUntil(
-                            MaterialPageRoute(
-                              builder: (context) => const PHY(),
-                            ),
-                            (Route<dynamic> route) => false),
-                      ),
-                      InkWell(
-                        child: Container(
-                          width: 300,
-                          padding: const EdgeInsets.all(31),
-                          decoration: BoxDecoration(
-                              color: const Color.fromARGB(255, 105, 57, 57),
-                              borderRadius: BorderRadius.circular(50)),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: const [
-                              Text(
-                                'FORMULA',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                ),
-                              ),
-                              SizedBox(
-                                height: 11,
-                              ),
-                              Text("CHEMISTRY",
-                                  style:
-                                      TextStyle(fontSize: 30, color: Colors.white)),
-                              //Row(
-                              //  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              //  children: const [
-                              //    // card number
-                              //    Text("wsd"),
-                              //    // card expiry date
-                              //    Text("awd"),
-                              //  ],
-                              //),
-                            ],
-                          ),
-                        ),
-                      ),
-                      InkWell(
-                        child: Container(
-                          width: 300,
-                          padding: const EdgeInsets.all(31),
-                          decoration: BoxDecoration(
-                              color: const Color.fromARGB(255, 6, 206, 179),
-                              borderRadius: BorderRadius.circular(50)),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: const [
-                              Text(
-                                'FORMULA',
-                                style: TextStyle(
-                                  color: Color.fromARGB(255, 0, 0, 0),
-                                ),
-                              ),
-                              SizedBox(
-                                height: 11,
-                              ),
-                              Text("MATHEMATICS",
-                                  style: TextStyle(
-                                      fontSize: 30,
-                                      color: Color.fromARGB(255, 0, 0, 0))),
-                              //Row(
-                              //  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              //  children: const [
-                              //    // card number
-                              //    Text("wsd"),
-                              //    // card expiry date
-                              //    Text("awd"),
-                              //  ],
-                              //),
-                            ],
-                          ),
-                        ),
-                      ),
-                      InkWell(
-                        child: Container(
-                          width: 300,
-                          padding: const EdgeInsets.all(31),
-                          decoration: BoxDecoration(
-                              color: const Color.fromARGB(255, 53, 223, 11),
-                              borderRadius: BorderRadius.circular(50)),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: const [
-                              Text(
-                                'QUICK LEARN',
-                                style: TextStyle(
-                                  color: Color.fromARGB(255, 0, 0, 0),
-                                ),
-                              ),
-                              SizedBox(
-                                height: 11,
-                              ),
-                              Text("BRAIN MAP",
-                                  style: TextStyle(
-                                      fontSize: 30,
-                                      color: Color.fromARGB(255, 0, 0, 0))),
-                              // Row(
-                              //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              //   children: const [
-                              //     // card number
-                              //     Text("wsd"),
-                              //     // card expiry date
-                              //     Text("awd"),
-                              //   ],
-                              // ),
-                            ],
-                          ),
-                        ),
-                      ),
-                      InkWell(
-                        child: Container(
-                          width: 300,
-                          padding: const EdgeInsets.all(31),
-                          decoration: BoxDecoration(
-                              color: Colors.black,
-                              borderRadius: BorderRadius.circular(50)),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: const [
-                              Text(
-                                'chapters',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                ),
-                              ),
-                              SizedBox(
-                                height: 11,
-                              ),
-                              Text("NOTES",
-                                  style:
-                                      TextStyle(fontSize: 30, color: Colors.white)),
-                              // Row(
-                              //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              //   children: const [
-                              //     // card number
-                              //     Text("wsd"),
-                              //     // card expiry date
-                              //     Text("awd"),
-                              //   ],
-                              // ),
-                            ],
-                          ),
-                        ),
-                      ),
-                      InkWell(
-                        child: Container(
-                          width: 300,
-                          padding: const EdgeInsets.all(31),
-                          decoration: BoxDecoration(
-                              color: const Color.fromARGB(255, 217, 233, 0),
-                              borderRadius: BorderRadius.circular(50)),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: const [
-                              Text(
-                                'socials',
-                                style: TextStyle(
-                                  color: Color.fromARGB(255, 0, 0, 0),
-                                ),
-                              ),
-                              SizedBox(
-                                height: 11,
-                              ),
-                              Text("CONNECT US",
-                                  style: TextStyle(
-                                      fontSize: 30,
-                                      color: Color.fromARGB(255, 0, 0, 0))),
-                              //  Row(
-                              //    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              //    children: const [
-                              //      // card number
-                              //      Text("wsd"),
-                              //      // card expiry date
-                              //      Text("awd"),
-                              //    ],
-                              //  ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                      
-                /////////////////////////////////////////////////////////////////////////////////////////////////////////    //page/screen indicator
-                const SizedBox(
-                  height: 23,
-                ),
-                SmoothPageIndicator(
-                  controller: _controller,
-                  count: 6,
-                  axisDirection: Axis.horizontal,
-                  effect: CustomizableEffect(
-                    activeDotDecoration: DotDecoration(
-                      width: 32,
-                      height: 12,
-                      color: Colors.black,
-                      rotationAngle: 180,
-                      verticalOffset: -20,
-                      borderRadius: BorderRadius.circular(24),
-                      dotBorder: const DotBorder(
-                        padding: 2,
-                        width: 2,
-                        color: Color.fromARGB(255, 0, 0, 0),
-                      ),
-                    ),
-                    dotDecoration: const DotDecoration(
-                      width: 24,
-                      height: 12,
-                      
-                      dotBorder: DotBorder(
-                        padding: 2,
-                        width: 2,
-                        color: Colors.black,
-                      ),
-                      borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(0),
-                          topRight: Radius.circular(9),
-                          bottomLeft: Radius.circular(9),
-                          bottomRight: Radius.circular(0)),
-                      //    borderRadius: BorderRadius.circular(16),
-                      verticalOffset: 0,
-                    ),
-                    spacing: 6.0,
-                    // activeColorOverride: (i) => colors[i],
-                    inActiveColorOverride: (i) => colors[i],
-                  ),
-                ),
-                      
-                const SizedBox(
-                  height: 23,
-                ),
-                      
-                /////////box button//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  //box bm and notes
-                Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-                  Container(
-                    height: 80,
-                    //width: 100 ,
-                    padding: const EdgeInsets.all(9),
-                    decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 255, 255, 255),
-                      borderRadius: BorderRadius.circular(20),
-                      boxShadow: [
-                        BoxShadow(
-                            color: Colors.grey.shade400,
-                            blurRadius: 23,
-                            spreadRadius: 9),
-                      ],
-                    ), // BoxDecoration
-                    child: Center(
-                      child: Image.asset("assets/images/brainmap.png"),
-                    ),
-                  ),
-                  const SizedBox(height: 2),
-                  Container(
-                    height: 80,
-                    //width: 100 ,
-                    padding: const EdgeInsets.all(9),
-                    decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 255, 255, 255),
-                      borderRadius: BorderRadius.circular(20),
-                      boxShadow: [
-                        BoxShadow(
-                            color: Colors.grey.shade400,
-                            blurRadius: 23,
-                            spreadRadius: 9),
-                      ],
-                    ), // BoxDecoration
-                    child: Center(
-                      child: Image.asset("assets/images/notes1.png"),
-                    ),
-                  ),
-                ]),
-                      
-                const SizedBox(
-                  height: 25,
-                ),
-                      
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: const [
-                    Text("BRAIN MAP",
-                        style: TextStyle(
-                            color: Colors.black,
-                            fontStyle: FontStyle.italic,
-                            fontSize: 21,
-                            fontWeight: FontWeight.bold)),
-                    Text("NOTES",
-                        style: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 21)),
-                  ],
-                ),
-                      
-                const SizedBox(
-                  height: 25,
-                ),
-                      
-                ///////////////////////////////////////////////////////list ///////////////////////////////////////////////////////////////////////////
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 19.0),
-                  child: Row(
-                     mainAxisAlignment: MainAxisAlignment.spaceEvenly, 
-                   // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Row(
+                      height: 150,
+                      child: PageView(
+                        controller: _controller,
+                        scrollDirection: Axis.horizontal,
                         children: [
-                          const SizedBox(
-                            width: 31,
-                          ),
-                          // ignore: sized_box_for_whitespace
-                          Container(
-                            height: 100,
-                            padding: const EdgeInsets.all(0),
-                            decoration: BoxDecoration(
-                              color: const Color.fromARGB(255, 219, 219, 219),
-                              borderRadius: BorderRadius.circular(22),
-                              boxShadow: const [
-                                BoxShadow(
-                                    color: Color.fromARGB(255, 138, 138, 138),
-                                    blurRadius: 30,
-                                    spreadRadius: 1),
-                              ],
+                          InkWell(
+                            child: Container(
+                              width: 0,
+                              padding: const EdgeInsets.all(31),
+                              decoration: BoxDecoration(
+                                  color: const Color.fromARGB(255, 255, 80, 80),
+                                  borderRadius: BorderRadius.circular(50)),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: const [
+                                  Text(
+                                    'FORMULA',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 11,
+                                  ),
+                                  Text("PHYSICS",
+                                      style:
+                                          TextStyle(fontSize: 30, color: Colors.white)),
+                                  //  Row(
+                                  //    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  //    children: const [
+                                  //      // card number
+                                  //      Text("wsd"),
+                                  //      // card expiry date
+                                  //      Text("awd"),
+                                  //   ],
+                                  // ),
+                                ],
+                              ),
                             ),
-                            child: Image.asset("assets/images/physics.png"),
+                            onTap: () => Navigator.of(context).pushAndRemoveUntil(
+                                MaterialPageRoute(
+                                  builder: (context) => const PHY(),
+                                ),
+                                (Route<dynamic> route) => false),
                           ),
-                          const SizedBox(
-                            width: 11,
+                          InkWell(
+                            child: Container(
+                              width: 300,
+                              padding: const EdgeInsets.all(31),
+                              decoration: BoxDecoration(
+                                  color: const Color.fromARGB(255, 105, 57, 57),
+                                  borderRadius: BorderRadius.circular(50)),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: const [
+                                  Text(
+                                    'FORMULA',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 11,
+                                  ),
+                                  Text("CHEMISTRY",
+                                      style:
+                                          TextStyle(fontSize: 30, color: Colors.white)),
+                                  //Row(
+                                  //  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  //  children: const [
+                                  //    // card number
+                                  //    Text("wsd"),
+                                  //    // card expiry date
+                                  //    Text("awd"),
+                                  //  ],
+                                  //),
+                                ],
+                              ),
+                            ),
                           ),
-                           Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                
-                                   Container(
+                          InkWell(
+                            child: Container( 
+                              width: 300,
+                              padding: const EdgeInsets.all(31),
+                              decoration: BoxDecoration(
+                                  color: const Color.fromARGB(255, 6, 206, 179),
+                                  borderRadius: BorderRadius.circular(50)),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: const [
+                                  Text(
+                                    'FORMULA',
+                                    style: TextStyle(
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 11,
+                                  ),
+                                  Text("MATHEMATICS",
+                                      style: TextStyle(
+                                          fontSize: 30,
+                                          color: Color.fromARGB(255, 0, 0, 0))),
+                                  //Row(
+                                  //  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  //  children: const [
+                                  //    // card number
+                                  //    Text("wsd"),
+                                  //    // card expiry date
+                                  //    Text("awd"),
+                                  //  ],
+                                  //),
+                                ],
+                              ),
+                            ),
+                          ),
+                          InkWell(
+                            child: Container(
+                              width: 300,
+                              padding: const EdgeInsets.all(31),
+                              decoration: BoxDecoration(
+                                  color: const Color.fromARGB(255, 53, 223, 11),
+                                  borderRadius: BorderRadius.circular(50)),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: const [
+                                  Text(
+                                    'QUICK LEARN',
+                                    style: TextStyle(
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 11,
+                                  ),
+                                  Text("BRAIN MAP",
+                                      style: TextStyle(
+                                          fontSize: 30,
+                                          color: Color.fromARGB(255, 0, 0, 0))),
+                                  // Row(
+                                  //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  //   children: const [
+                                  //     // card number
+                                  //     Text("wsd"),
+                                  //     // card expiry date
+                                  //     Text("awd"),
+                                  //   ],
+                                  // ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          InkWell(
+                            child: Container(
+                              width: 300,
+                              padding: const EdgeInsets.all(31),
+                              decoration: BoxDecoration(
+                                  color: Colors.black,
+                                  borderRadius: BorderRadius.circular(50)),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: const [
+                                  Text(
+                                    'chapters',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 11,
+                                  ),
+                                  Text("NOTES",
+                                      style:
+                                          TextStyle(fontSize: 30, color: Colors.white)),
+                                  // Row(
+                                  //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  //   children: const [
+                                  //     // card number
+                                  //     Text("wsd"),
+                                  //     // card expiry date
+                                  //     Text("awd"),
+                                  //   ],
+                                  // ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          InkWell(
+                            child: Container(
+                              width: 300,
+                              padding: const EdgeInsets.all(31),
+                              decoration: BoxDecoration(
+                                  color: const Color.fromARGB(255, 217, 233, 0),
+                                  borderRadius: BorderRadius.circular(50)),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: const [
+                                  Text(
+                                    'socials',
+                                    style: TextStyle(
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 11,
+                                  ),
+                                  Text("CONNECT US",
+                                      style: TextStyle(
+                                          fontSize: 30,
+                                          color: Color.fromARGB(255, 0, 0, 0))),
+                                  //  Row(
+                                  //    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  //    children: const [
+                                  //      // card number
+                                  //      Text("wsd"),
+                                  //      // card expiry date
+                                  //      Text("awd"),
+                                  //    ],
+                                  //  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                          
+                    /////////////////////////////////////////////////////////////////////////////////////////////////////////    //page/screen indicator
+                    const SizedBox(
+                      height: 23,
+                    ),
+                    SmoothPageIndicator(
+                      controller: _controller,
+                      count: 6,
+                      axisDirection: Axis.horizontal,
+                      effect: CustomizableEffect(
+                        activeDotDecoration: DotDecoration(
+                          width: 32,
+                          height: 12,
+                          color: Colors.black,
+                          rotationAngle: 180,
+                          verticalOffset: -20,
+                          borderRadius: BorderRadius.circular(24),
+                          dotBorder: const DotBorder(
+                            padding: 2,
+                            width: 2,
+                            color: Color.fromARGB(255, 0, 0, 0),
+                          ),
+                        ),
+                        dotDecoration: const DotDecoration(
+                          width: 24,
+                          height: 12,
+                          
+                          dotBorder: DotBorder(
+                            padding: 2,
+                            width: 2,
+                            color: Colors.black,
+                          ),
+                          borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(0),
+                              topRight: Radius.circular(9),
+                              bottomLeft: Radius.circular(9),
+                              bottomRight: Radius.circular(0)),
+                          //    borderRadius: BorderRadius.circular(16),
+                          verticalOffset: 0,
+                        ),
+                        spacing: 6.0,
+                        // activeColorOverride: (i) => colors[i],
+                        inActiveColorOverride: (i) => colors[i],
+                      ),
+                    ),
+                          
+                    const SizedBox(
+                      height: 23,
+                    ),
+                          
+                    /////////box button//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  //box bm and notes
+                    Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+                      Container(
+                        height: 80,
+                        //width: 100 ,
+                        padding: const EdgeInsets.all(9),
+                        decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 255, 255, 255),
+                          borderRadius: BorderRadius.circular(20),
+                          boxShadow: [
+                            BoxShadow(
+                                color: Colors.grey.shade400,
+                                blurRadius: 23,
+                                spreadRadius: 9),
+                          ],
+                        ), // BoxDecoration
+                        child: Center(
+                          child: Image.asset("assets/images/brainmap.png"),
+                        ),
+                      ),
+                      const SizedBox(height: 2),
+                      Container(
+                        height: 80,
+                        //width: 100 ,
+                        padding: const EdgeInsets.all(9),
+                        decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 255, 255, 255),
+                          borderRadius: BorderRadius.circular(20),
+                          boxShadow: [
+                            BoxShadow(
+                                color: Colors.grey.shade400,
+                                blurRadius: 23,
+                                spreadRadius: 9),
+                          ],
+                        ), // BoxDecoration
+                        child: Center(
+                          child: Image.asset("assets/images/notes1.png"),
+                        ),
+                      ),
+                    ]),
+                          
+                    const SizedBox(
+                      height: 25,
+                    ),
+                          
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: const [
+                        Text("BRAIN MAP",
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontStyle: FontStyle.italic,
+                                fontSize: 21,
+                                fontWeight: FontWeight.bold)),
+                        Text("NOTES",
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 21)),
+                      ],
+                    ),
+                          
+                    const SizedBox(
+                      height: 25,
+                    ),
+                          
+                    ///////////////////////////////////////////////////////list ///////////////////////////////////////////////////////////////////////////
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 19.0),
+                      child: Row(
+                         mainAxisAlignment: MainAxisAlignment.spaceEvenly, 
+                       // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              const SizedBox(
+                                width: 31,
+                              ),
+                              // ignore: sized_box_for_whitespace
+                              Container(
+                                height: 100,
+                                padding: const EdgeInsets.all(0),
+                                decoration: BoxDecoration(
+                                  color: const Color.fromARGB(255, 219, 219, 219),
+                                  borderRadius: BorderRadius.circular(22),
+                                  boxShadow: const [
+                                    BoxShadow(
+                                        color: Color.fromARGB(255, 138, 138, 138),
+                                        blurRadius: 30,
+                                        spreadRadius: 1),
+                                  ],
+                                ),
+                                child: Image.asset("assets/images/physics.png"),
+                              ),
+                              const SizedBox(
+                                width: 11,
+                              ),
+                               Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    
+                                       Container(
+                                        height: 80,
+                                        width: 190,
+                                        decoration: BoxDecoration(
+                                          color: const Color.fromARGB(255, 219, 219, 219),
+                                          borderRadius: BorderRadius.circular(9),
+                                          boxShadow: const [
+                                            BoxShadow(
+                                                color: Color.fromARGB(255, 138, 138, 138),
+                                                blurRadius: 10,
+                                                spreadRadius: 1),
+                                          ],
+                                        ),
+                                        child: const Center(
+                                          child: Text(
+                                            "PHYSICS",
+                                            style: TextStyle(
+                                                fontSize: 21, fontWeight: FontWeight.bold),
+                                          ),
+                                        ),
+                                      ),
+                                    
+                                  ],
+                                ),
+                            
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                          
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 19.0),
+                      child: Row(
+                         mainAxisAlignment: MainAxisAlignment.spaceEvenly, 
+                        //mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              const SizedBox(
+                                width: 31,
+                              ),
+                              // ignore: sized_box_for_whitespace
+                              Container(
+                                height: 100,
+                                padding: const EdgeInsets.all(12),
+                                decoration: BoxDecoration(
+                                  color: const Color.fromARGB(255, 219, 219, 219),
+                                  borderRadius: BorderRadius.circular(22),
+                                  boxShadow: const [
+                                    BoxShadow(
+                                        color: Color.fromARGB(255, 138, 138, 138),
+                                        blurRadius: 30,
+                                        spreadRadius: 1),
+                                  ],
+                                ),
+                                child: Image.asset("assets/images/chem.png"),
+                              ),
+                              const SizedBox(
+                                width: 11,
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Container(
                                     height: 80,
                                     width: 190,
                                     decoration: BoxDecoration(
@@ -436,218 +543,158 @@ class MOB extends StatelessWidget {
                                     ),
                                     child: const Center(
                                       child: Text(
-                                        "PHYSICS",
+                                        " CHEMISTRY",
                                         style: TextStyle(
-                                            fontSize: 21, fontWeight: FontWeight.bold),
+                                          fontSize: 21,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                
-                              ],
-                            ),
-                        
+                                  )
+                                ],
+                              ),
+                            ],
+                          )
                         ],
-                      )
-                    ],
-                  ),
-                ),
-                      
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 19.0),
-                  child: Row(
-                     mainAxisAlignment: MainAxisAlignment.spaceEvenly, 
-                    //mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Row(
+                      ),
+                    ),
+                          
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 19.0),
+                      child: Row(
+                         mainAxisAlignment: MainAxisAlignment.spaceEvenly, 
+                        //mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          const SizedBox(
-                            width: 31,
-                          ),
-                          // ignore: sized_box_for_whitespace
-                          Container(
-                            height: 100,
-                            padding: const EdgeInsets.all(12),
-                            decoration: BoxDecoration(
-                              color: const Color.fromARGB(255, 219, 219, 219),
-                              borderRadius: BorderRadius.circular(22),
-                              boxShadow: const [
-                                BoxShadow(
-                                    color: Color.fromARGB(255, 138, 138, 138),
-                                    blurRadius: 30,
-                                    spreadRadius: 1),
-                              ],
-                            ),
-                            child: Image.asset("assets/images/chem.png"),
-                          ),
-                          const SizedBox(
-                            width: 11,
-                          ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
+                          Row(
                             children: [
+                              const SizedBox(
+                                width: 31,
+                              ),
+                              // ignore: sized_box_for_whitespace
                               Container(
-                                height: 80,
-                                width: 190,
+                                height: 100,
+                                padding: const EdgeInsets.all(0),
                                 decoration: BoxDecoration(
                                   color: const Color.fromARGB(255, 219, 219, 219),
-                                  borderRadius: BorderRadius.circular(9),
+                                  borderRadius: BorderRadius.circular(22),
                                   boxShadow: const [
                                     BoxShadow(
                                         color: Color.fromARGB(255, 138, 138, 138),
-                                        blurRadius: 10,
+                                        blurRadius: 30,
                                         spreadRadius: 1),
                                   ],
                                 ),
-                                child: const Center(
-                                  child: Text(
-                                    " CHEMISTRY",
-                                    style: TextStyle(
-                                      fontSize: 21,
-                                      fontWeight: FontWeight.bold,
+                                child: Image.asset("assets/images/math.png"),
+                              ),
+                              const SizedBox(
+                                width: 11,
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    height: 80,
+                                    width: 190,
+                                    decoration: BoxDecoration(
+                                      color: const Color.fromARGB(255, 219, 219, 219),
+                                      borderRadius: BorderRadius.circular(9),
+                                      boxShadow: const [
+                                        BoxShadow(
+                                            color: Color.fromARGB(255, 138, 138, 138),
+                                            blurRadius: 10,
+                                            spreadRadius: 1),
+                                      ],
                                     ),
-                                  ),
-                                ),
-                              )
+                                    child: const Center(
+                                      child: Text(
+                                        "MATHEMATICS",
+                                        style: TextStyle(
+                                          fontSize: 21,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
                             ],
-                          ),
+                          )
                         ],
-                      )
-                    ],
-                  ),
-                ),
-                      
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 19.0),
-                  child: Row(
-                     mainAxisAlignment: MainAxisAlignment.spaceEvenly, 
-                    //mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Row(
+                      ),
+                    ),
+                          
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 19.0),
+                      child: Row(
+                         mainAxisAlignment: MainAxisAlignment.spaceEvenly, 
+                          
+                        //mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          const SizedBox(
-                            width: 31,
-                          ),
-                          // ignore: sized_box_for_whitespace
-                          Container(
-                            height: 100,
-                            padding: const EdgeInsets.all(0),
-                            decoration: BoxDecoration(
-                              color: const Color.fromARGB(255, 219, 219, 219),
-                              borderRadius: BorderRadius.circular(22),
-                              boxShadow: const [
-                                BoxShadow(
-                                    color: Color.fromARGB(255, 138, 138, 138),
-                                    blurRadius: 30,
-                                    spreadRadius: 1),
-                              ],
-                            ),
-                            child: Image.asset("assets/images/math.png"),
-                          ),
-                          const SizedBox(
-                            width: 11,
-                          ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
+                          Row(
                             children: [
+                              const SizedBox(
+                                width: 31,
+                              ),
+                              // ignore: sized_box_for_whitespace
                               Container(
-                                height: 80,
-                                width: 190,
+                                height: 100,
+                                padding: const EdgeInsets.all(12),
                                 decoration: BoxDecoration(
                                   color: const Color.fromARGB(255, 219, 219, 219),
-                                  borderRadius: BorderRadius.circular(9),
+                                  borderRadius: BorderRadius.circular(22),
                                   boxShadow: const [
                                     BoxShadow(
                                         color: Color.fromARGB(255, 138, 138, 138),
-                                        blurRadius: 10,
+                                        blurRadius: 30,
                                         spreadRadius: 1),
                                   ],
                                 ),
-                                child: const Center(
-                                  child: Text(
-                                    "MATHEMATICS",
-                                    style: TextStyle(
-                                      fontSize: 21,
-                                      fontWeight: FontWeight.bold,
+                                child: Image.asset("assets/images/calc.png"),
+                              ),
+                              const SizedBox(
+                                width: 11,
+                              ),
+                              Column( 
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    height: 80,
+                                    width: 190,
+                                    decoration: BoxDecoration(
+                                      color: const Color.fromARGB(255, 219, 219, 219),
+                                      borderRadius: BorderRadius.circular(9),
+                                      boxShadow: const [
+                                        BoxShadow(
+                                            color: Color.fromARGB(255, 138, 138, 138),
+                                            blurRadius: 10,
+                                            spreadRadius: 1),
+                                      ],
                                     ),
-                                  ),
-                                ),
-                              )
+                                    child: const Center(
+                                      child: Text(
+                                        "CALCULATOR",
+                                        style: TextStyle(
+                                          fontSize: 21,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
                             ],
-                          ),
-                        ],
-                      )
-                    ],
-                  ),
+                          )
+                        ], 
+                      ),
+                    )
+                  ]),
                 ),
-                      
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 19.0),
-                  child: Row(
-                     mainAxisAlignment: MainAxisAlignment.spaceEvenly, 
-
-                    //mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Row(
-                        children: [
-                          const SizedBox(
-                            width: 31,
-                          ),
-                          // ignore: sized_box_for_whitespace
-                          Container(
-                            height: 100,
-                            padding: const EdgeInsets.all(12),
-                            decoration: BoxDecoration(
-                              color: const Color.fromARGB(255, 219, 219, 219),
-                              borderRadius: BorderRadius.circular(22),
-                              boxShadow: const [
-                                BoxShadow(
-                                    color: Color.fromARGB(255, 138, 138, 138),
-                                    blurRadius: 30,
-                                    spreadRadius: 1),
-                              ],
-                            ),
-                            child: Image.asset("assets/images/calc.png"),
-                          ),
-                          const SizedBox(
-                            width: 11,
-                          ),
-                          Column( 
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Container(
-                                height: 80,
-                                width: 190,
-                                decoration: BoxDecoration(
-                                  color: const Color.fromARGB(255, 219, 219, 219),
-                                  borderRadius: BorderRadius.circular(9),
-                                  boxShadow: const [
-                                    BoxShadow(
-                                        color: Color.fromARGB(255, 138, 138, 138),
-                                        blurRadius: 10,
-                                        spreadRadius: 1),
-                                  ],
-                                ),
-                                child: const Center(
-                                  child: Text(
-                                    "CALCULATOR",
-                                    style: TextStyle(
-                                      fontSize: 21,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                ),
-                              )
-                            ],
-                          ),
-                        ],
-                      )
-                    ], 
-                  ),
-                )
-              ]),
-            ),
-         
-      ),
+              ),
+              ),
+      
+              
+              ],
+        ),
       
       bottomNavigationBar:
       GNav(
@@ -709,8 +756,11 @@ class MOB extends StatelessWidget {
               text: "settings",
             ),
           ]
-      
-      )
+     
+      ),
+    
+            // ],
+            
     );
   }
 }

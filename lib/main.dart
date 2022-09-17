@@ -11,7 +11,6 @@ import 'package:science_buddy/home.dart';
 
 
 
-
 void main() {
   runApp(const MyApp());
 }
@@ -26,7 +25,8 @@ class MyApp extends StatelessWidget {
       title: "science buddy",
        
       home:  const HOME(),
-      theme: ThemeData(useMaterial3: true), 
+      theme: ThemeData(useMaterial3: true,
+      appBarTheme:   AppBarTheme(backgroundColor: Colors.grey.shade300,)), 
       debugShowCheckedModeBanner: false,
       
 

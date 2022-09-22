@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+
+
 class PHY extends StatelessWidget {
   const PHY({Key? key}) : super(key: key);
 
@@ -23,7 +25,7 @@ class PHY extends StatelessWidget {
             ),
            // actions: [
            //   IconButton(
-           //       onPressed: () {},
+           //       onPressed: () {}, 
            //       icon: const Icon(
            //         Icons.star_outline_sharp,
            //         size: 30,
@@ -46,7 +48,7 @@ class PHY extends StatelessWidget {
                         Row(
                           children: [
                             const SizedBox(
-                              width: 31,
+                              width: 15  ,
                             ),
                             // ignore: sized_box_for_whitespace
 
@@ -56,40 +58,42 @@ class PHY extends StatelessWidget {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.red.shade600,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.red.shade200,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "             PHYSICS",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
+                                GestureDetector(
+                                  child: Container(
+                                    height: 70,
+                                    width: 270,
+                                    decoration: BoxDecoration(
+                                      color: Colors.red.shade300,
+                                      borderRadius: BorderRadius.circular(9),
+                                      boxShadow: [
+                                        BoxShadow(
+                                            color: Colors.red.shade600,
+                                            offset: const Offset(4.0, 4.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9),
+                                        BoxShadow(
+                                            color: Colors.red.shade200,
+                                            offset: const Offset(-5.0, -5.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9)
+                                      ],
+                                    ),
+                                    child: Row(
+                                      children: const [
+                                        Center(
+                                          child: Text(
+                                            "             PHYSICS",
+                                            style: TextStyle(
+                                                fontSize: 21,
+                                                fontWeight: FontWeight.bold),
+                                          ),
                                         ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
+                                        SizedBox(
+                                          width: 32,
+                                        ),
+                                        Icon(Icons.keyboard_arrow_right),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ],
@@ -99,7 +103,8 @@ class PHY extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const SizedBox(
+
+                    const SizedBox(
                     height: 35,
                   ),
                   Padding(
@@ -111,7 +116,7 @@ class PHY extends StatelessWidget {
                         Row(
                           children: [
                             const SizedBox(
-                              width: 31,
+                              width: 15  ,
                             ),
                             // ignore: sized_box_for_whitespace
 
@@ -121,40 +126,42 @@ class PHY extends StatelessWidget {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.red.shade600,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.red.shade200,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "             PHYSICS",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
+                                GestureDetector(
+                                  child: Container(
+                                    height: 70,
+                                    width: 270,
+                                    decoration: BoxDecoration(
+                                      color: Colors.red.shade300,
+                                      borderRadius: BorderRadius.circular(9),
+                                      boxShadow: [
+                                        BoxShadow(
+                                            color: Colors.red.shade600,
+                                            offset: const Offset(4.0, 4.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9),
+                                        BoxShadow(
+                                            color: Colors.red.shade200,
+                                            offset: const Offset(-5.0, -5.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9)
+                                      ],
+                                    ),
+                                    child: Row(
+                                      children: const [
+                                        Center(
+                                          child: Text(
+                                            "             PHYSICS",
+                                            style: TextStyle(
+                                                fontSize: 21,
+                                                fontWeight: FontWeight.bold),
+                                          ),
                                         ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
+                                        SizedBox(
+                                          width: 32,
+                                        ),
+                                        Icon(Icons.keyboard_arrow_right),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ],
@@ -164,7 +171,7 @@ class PHY extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const SizedBox(
+ const SizedBox(
                     height: 35,
                   ),
                   Padding(
@@ -176,7 +183,7 @@ class PHY extends StatelessWidget {
                         Row(
                           children: [
                             const SizedBox(
-                              width: 31,
+                              width: 15  ,
                             ),
                             // ignore: sized_box_for_whitespace
 
@@ -186,40 +193,42 @@ class PHY extends StatelessWidget {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.red.shade600,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.red.shade200,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "             PHYSICS",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
+                                GestureDetector(
+                                  child: Container(
+                                    height: 70,
+                                    width: 270,
+                                    decoration: BoxDecoration(
+                                      color: Colors.red.shade300,
+                                      borderRadius: BorderRadius.circular(9),
+                                      boxShadow: [
+                                        BoxShadow(
+                                            color: Colors.red.shade600,
+                                            offset: const Offset(4.0, 4.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9),
+                                        BoxShadow(
+                                            color: Colors.red.shade200,
+                                            offset: const Offset(-5.0, -5.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9)
+                                      ],
+                                    ),
+                                    child: Row(
+                                      children: const [
+                                        Center(
+                                          child: Text(
+                                            "             PHYSICS",
+                                            style: TextStyle(
+                                                fontSize: 21,
+                                                fontWeight: FontWeight.bold),
+                                          ),
                                         ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
+                                        SizedBox(
+                                          width: 32,
+                                        ),
+                                        Icon(Icons.keyboard_arrow_right),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ],
@@ -229,7 +238,7 @@ class PHY extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const SizedBox(
+ const SizedBox(
                     height: 35,
                   ),
                   Padding(
@@ -241,7 +250,7 @@ class PHY extends StatelessWidget {
                         Row(
                           children: [
                             const SizedBox(
-                              width: 31,
+                              width: 15  ,
                             ),
                             // ignore: sized_box_for_whitespace
 
@@ -251,40 +260,42 @@ class PHY extends StatelessWidget {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.red.shade600,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.red.shade200,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "             PHYSICS",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
+                                GestureDetector(
+                                  child: Container(
+                                    height: 70,
+                                    width: 270,
+                                    decoration: BoxDecoration(
+                                      color: Colors.red.shade300,
+                                      borderRadius: BorderRadius.circular(9),
+                                      boxShadow: [
+                                        BoxShadow(
+                                            color: Colors.red.shade600,
+                                            offset: const Offset(4.0, 4.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9),
+                                        BoxShadow(
+                                            color: Colors.red.shade200,
+                                            offset: const Offset(-5.0, -5.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9)
+                                      ],
+                                    ),
+                                    child: Row(
+                                      children: const [
+                                        Center(
+                                          child: Text(
+                                            "             PHYSICS",
+                                            style: TextStyle(
+                                                fontSize: 21,
+                                                fontWeight: FontWeight.bold),
+                                          ),
                                         ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
+                                        SizedBox(
+                                          width: 32,
+                                        ),
+                                        Icon(Icons.keyboard_arrow_right),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ],
@@ -294,7 +305,7 @@ class PHY extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const SizedBox(
+ const SizedBox(
                     height: 35,
                   ),
                   Padding(
@@ -306,7 +317,7 @@ class PHY extends StatelessWidget {
                         Row(
                           children: [
                             const SizedBox(
-                              width: 31,
+                              width: 15  ,
                             ),
                             // ignore: sized_box_for_whitespace
 
@@ -316,40 +327,42 @@ class PHY extends StatelessWidget {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.red.shade600,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.red.shade200,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "             PHYSICS",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
+                                GestureDetector(
+                                  child: Container(
+                                    height: 70,
+                                    width: 270,
+                                    decoration: BoxDecoration(
+                                      color: Colors.red.shade300,
+                                      borderRadius: BorderRadius.circular(9),
+                                      boxShadow: [
+                                        BoxShadow(
+                                            color: Colors.red.shade600,
+                                            offset: const Offset(4.0, 4.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9),
+                                        BoxShadow(
+                                            color: Colors.red.shade200,
+                                            offset: const Offset(-5.0, -5.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9)
+                                      ],
+                                    ),
+                                    child: Row(
+                                      children: const [
+                                        Center(
+                                          child: Text(
+                                            "             PHYSICS",
+                                            style: TextStyle(
+                                                fontSize: 21,
+                                                fontWeight: FontWeight.bold),
+                                          ),
                                         ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
+                                        SizedBox(
+                                          width: 32,
+                                        ),
+                                        Icon(Icons.keyboard_arrow_right),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ],
@@ -359,7 +372,7 @@ class PHY extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const SizedBox(
+ const SizedBox(
                     height: 35,
                   ),
                   Padding(
@@ -371,7 +384,7 @@ class PHY extends StatelessWidget {
                         Row(
                           children: [
                             const SizedBox(
-                              width: 31,
+                              width: 15  ,
                             ),
                             // ignore: sized_box_for_whitespace
 
@@ -381,40 +394,42 @@ class PHY extends StatelessWidget {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.red.shade600,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.red.shade200,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "             PHYSICS",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
+                                GestureDetector(
+                                  child: Container(
+                                    height: 70,
+                                    width: 270,
+                                    decoration: BoxDecoration(
+                                      color: Colors.red.shade300,
+                                      borderRadius: BorderRadius.circular(9),
+                                      boxShadow: [
+                                        BoxShadow(
+                                            color: Colors.red.shade600,
+                                            offset: const Offset(4.0, 4.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9),
+                                        BoxShadow(
+                                            color: Colors.red.shade200,
+                                            offset: const Offset(-5.0, -5.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9)
+                                      ],
+                                    ),
+                                    child: Row(
+                                      children: const [
+                                        Center(
+                                          child: Text(
+                                            "             PHYSICS",
+                                            style: TextStyle(
+                                                fontSize: 21,
+                                                fontWeight: FontWeight.bold),
+                                          ),
                                         ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
+                                        SizedBox(
+                                          width: 32,
+                                        ),
+                                        Icon(Icons.keyboard_arrow_right),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ],
@@ -424,7 +439,7 @@ class PHY extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const SizedBox(
+ const SizedBox(
                     height: 35,
                   ),
                   Padding(
@@ -436,7 +451,7 @@ class PHY extends StatelessWidget {
                         Row(
                           children: [
                             const SizedBox(
-                              width: 31,
+                              width: 15  ,
                             ),
                             // ignore: sized_box_for_whitespace
 
@@ -446,40 +461,42 @@ class PHY extends StatelessWidget {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.red.shade600,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.red.shade200,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "             PHYSICS",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
+                                GestureDetector(
+                                  child: Container(
+                                    height: 70,
+                                    width: 270,
+                                    decoration: BoxDecoration(
+                                      color: Colors.red.shade300,
+                                      borderRadius: BorderRadius.circular(9),
+                                      boxShadow: [
+                                        BoxShadow(
+                                            color: Colors.red.shade600,
+                                            offset: const Offset(4.0, 4.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9),
+                                        BoxShadow(
+                                            color: Colors.red.shade200,
+                                            offset: const Offset(-5.0, -5.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9)
+                                      ],
+                                    ),
+                                    child: Row(
+                                      children: const [
+                                        Center(
+                                          child: Text(
+                                            "             PHYSICS",
+                                            style: TextStyle(
+                                                fontSize: 21,
+                                                fontWeight: FontWeight.bold),
+                                          ),
                                         ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
+                                        SizedBox(
+                                          width: 32,
+                                        ),
+                                        Icon(Icons.keyboard_arrow_right),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ],
@@ -489,7 +506,7 @@ class PHY extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const SizedBox(
+ const SizedBox(
                     height: 35,
                   ),
                   Padding(
@@ -501,7 +518,7 @@ class PHY extends StatelessWidget {
                         Row(
                           children: [
                             const SizedBox(
-                              width: 31,
+                              width: 15  ,
                             ),
                             // ignore: sized_box_for_whitespace
 
@@ -511,40 +528,42 @@ class PHY extends StatelessWidget {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.red.shade600,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.red.shade200,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "             PHYSICS",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
+                                GestureDetector(
+                                  child: Container(
+                                    height: 70,
+                                    width: 270,
+                                    decoration: BoxDecoration(
+                                      color: Colors.red.shade300,
+                                      borderRadius: BorderRadius.circular(9),
+                                      boxShadow: [
+                                        BoxShadow(
+                                            color: Colors.red.shade600,
+                                            offset: const Offset(4.0, 4.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9),
+                                        BoxShadow(
+                                            color: Colors.red.shade200,
+                                            offset: const Offset(-5.0, -5.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9)
+                                      ],
+                                    ),
+                                    child: Row(
+                                      children: const [
+                                        Center(
+                                          child: Text(
+                                            "             PHYSICS",
+                                            style: TextStyle(
+                                                fontSize: 21,
+                                                fontWeight: FontWeight.bold),
+                                          ),
                                         ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
+                                        SizedBox(
+                                          width: 32,
+                                        ),
+                                        Icon(Icons.keyboard_arrow_right),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ],
@@ -554,1501 +573,10 @@ class PHY extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const SizedBox(
-                    height: 35,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 31,
-                            ),
-                            // ignore: sized_box_for_whitespace
 
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.red.shade600,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.red.shade200,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "             PHYSICS",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 35,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 31,
-                            ),
-                            // ignore: sized_box_for_whitespace
 
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.red.shade600,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.red.shade200,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "             PHYSICS",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 35,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 31,
-                            ),
-                            // ignore: sized_box_for_whitespace
+ 
 
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.red.shade600,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.red.shade200,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "             PHYSICS",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 35,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 31,
-                            ),
-                            // ignore: sized_box_for_whitespace
-
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.red.shade600,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.red.shade200,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "             PHYSICS",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 35,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 31,
-                            ),
-                            // ignore: sized_box_for_whitespace
-
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.red.shade600,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.red.shade200,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "             PHYSICS",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 35,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 31,
-                            ),
-                            // ignore: sized_box_for_whitespace
-
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.red.shade600,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.red.shade200,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "             PHYSICS",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 35,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 31,
-                            ),
-                            // ignore: sized_box_for_whitespace
-
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.red.shade600,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.red.shade200,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "             PHYSICS",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 35,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 31,
-                            ),
-                            // ignore: sized_box_for_whitespace
-
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.red.shade600,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.red.shade200,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "             PHYSICS",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 35,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 31,
-                            ),
-                            // ignore: sized_box_for_whitespace
-
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.red.shade600,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.red.shade200,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "             PHYSICS",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 35,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 31,
-                            ),
-                            // ignore: sized_box_for_whitespace
-
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.red.shade600,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.red.shade200,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "             PHYSICS",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 35,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 31,
-                            ),
-                            // ignore: sized_box_for_whitespace
-
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.red.shade600,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.red.shade200,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "             PHYSICS",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 35,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 31,
-                            ),
-                            // ignore: sized_box_for_whitespace
-
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.red.shade600,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.red.shade200,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "             PHYSICS",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 35,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 31,
-                            ),
-                            // ignore: sized_box_for_whitespace
-
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.red.shade600,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.red.shade200,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "             PHYSICS",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 35,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 31,
-                            ),
-                            // ignore: sized_box_for_whitespace
-
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.red.shade600,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.red.shade200,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "             PHYSICS",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 35,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 31,
-                            ),
-                            // ignore: sized_box_for_whitespace
-
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.red.shade600,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.red.shade200,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "             PHYSICS",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 35,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 31,
-                            ),
-                            // ignore: sized_box_for_whitespace
-
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.red.shade600,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.red.shade200,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "             PHYSICS",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 35,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 31,
-                            ),
-                            // ignore: sized_box_for_whitespace
-
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.red.shade600,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.red.shade200,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "             PHYSICS",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 35,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 31,
-                            ),
-                            // ignore: sized_box_for_whitespace
-
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.red.shade600,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.red.shade200,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "             PHYSICS",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 35,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 31,
-                            ),
-                            // ignore: sized_box_for_whitespace
-
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.red.shade600,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.red.shade200,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "             PHYSICS",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 35,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 31,
-                            ),
-                            // ignore: sized_box_for_whitespace
-
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.red.shade600,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.red.shade200,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "             PHYSICS",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 35,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 31,
-                            ),
-                            // ignore: sized_box_for_whitespace
-
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.red.shade600,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.red.shade200,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "             PHYSICS",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 35,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 31,
-                            ),
-                            // ignore: sized_box_for_whitespace
-
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.red.shade600,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.red.shade200,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "             PHYSICS",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 35,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 31,
-                            ),
-                            // ignore: sized_box_for_whitespace
-
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.red.shade600,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.red.shade200,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "             PHYSICS",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
                 ],
               ),
             ),

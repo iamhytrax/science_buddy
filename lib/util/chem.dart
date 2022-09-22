@@ -36,8 +36,9 @@ class CHEM extends StatelessWidget {
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  const SizedBox(
-                    height: 35,
+
+                    const SizedBox(
+                    height: 35 ,
                   ),
                   Padding(
                     padding: const EdgeInsets.only(bottom: 19.0),
@@ -48,7 +49,7 @@ class CHEM extends StatelessWidget {
                         Row(
                           children: [
                             const SizedBox(
-                              width: 31,
+                              width: 15,
                             ),
                             // ignore: sized_box_for_whitespace
 
@@ -58,317 +59,41 @@ class CHEM extends StatelessWidget {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.amber.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.amber.shade700, 
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.amber.shade100,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "       CHEMISTRY",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
+                                GestureDetector(
+                                  child: Container(
+                                    height: 70,
+                                    width: 270,
+                                    decoration: BoxDecoration( color: Colors.amber.shade300,
+                                      borderRadius: BorderRadius.circular(9),
+                                      boxShadow: [
+                                        BoxShadow(
+                                            color: Colors.amber.shade700, 
+                                            offset: const Offset(4.0, 4.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9),
+                                        BoxShadow(
+                                            color: Colors.amber.shade100,
+                                            offset: const Offset(-5.0, -5.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9)
+                                      ],
+                                    ),
+                                    child: Row(
+                                      children: const [
+                                        Center(
+                                          child: Text(
+                                            "             CHEMISTRY", 
+                                            style: TextStyle(
+                                                fontSize: 21,
+                                                fontWeight: FontWeight.bold),
+                                          ),
                                         ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 35,
-                  ),
-
-
-
-
-                  
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 31,
-                            ),
-                            // ignore: sized_box_for_whitespace
-
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.amber.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.amber.shade700, 
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.amber.shade100,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "       CHEMISTRY",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
+                                        SizedBox(
+                                          width: 32,
                                         ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 35,
-                  ),
-
-
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 31,
-                            ),
-                            // ignore: sized_box_for_whitespace
-
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.amber.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.amber.shade700, 
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.amber.shade100,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "       CHEMISTRY",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 35,
-                  ),
-
-
-
-
-                  
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 31,
-                            ),
-                            // ignore: sized_box_for_whitespace
-
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.amber.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.amber.shade700, 
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.amber.shade100,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "       CHEMISTRY",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 35,
-                  ),
-
-
-
-
-
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 31,
-                            ),
-                            // ignore: sized_box_for_whitespace
-
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.amber.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.amber.shade700, 
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.amber.shade100,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "       CHEMISTRY",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
+                                        Icon(Icons.keyboard_arrow_right),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ],
@@ -379,10 +104,11 @@ class CHEM extends StatelessWidget {
                     ),
                   ),
                   
+  
 
 
-                   const SizedBox(
-                    height: 35,
+                    const SizedBox(
+                    height: 35 ,
                   ),
                   Padding(
                     padding: const EdgeInsets.only(bottom: 19.0),
@@ -393,7 +119,7 @@ class CHEM extends StatelessWidget {
                         Row(
                           children: [
                             const SizedBox(
-                              width: 31,
+                              width: 15,
                             ),
                             // ignore: sized_box_for_whitespace
 
@@ -403,40 +129,41 @@ class CHEM extends StatelessWidget {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.amber.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.amber.shade700, 
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.amber.shade100,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "       CHEMISTRY",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
+                                GestureDetector(
+                                  child: Container(
+                                    height: 70,
+                                    width: 270,
+                                    decoration: BoxDecoration( color: Colors.amber.shade300,
+                                      borderRadius: BorderRadius.circular(9),
+                                      boxShadow: [
+                                        BoxShadow(
+                                            color: Colors.amber.shade700, 
+                                            offset: const Offset(4.0, 4.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9),
+                                        BoxShadow(
+                                            color: Colors.amber.shade100,
+                                            offset: const Offset(-5.0, -5.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9)
+                                      ],
+                                    ),
+                                    child: Row(
+                                      children: const [
+                                        Center(
+                                          child: Text(
+                                            "             CHEMISTRY", 
+                                            style: TextStyle(
+                                                fontSize: 21,
+                                                fontWeight: FontWeight.bold),
+                                          ),
                                         ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
+                                        SizedBox(
+                                          width: 32,
+                                        ),
+                                        Icon(Icons.keyboard_arrow_right),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ],
@@ -446,14 +173,11 @@ class CHEM extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const SizedBox(
-                    height: 35,
-                  ),
-
-
-
-
                   
+  
+                    const SizedBox(
+                    height: 35 ,
+                  ),
                   Padding(
                     padding: const EdgeInsets.only(bottom: 19.0),
                     child: Row(
@@ -463,7 +187,7 @@ class CHEM extends StatelessWidget {
                         Row(
                           children: [
                             const SizedBox(
-                              width: 31,
+                              width: 15,
                             ),
                             // ignore: sized_box_for_whitespace
 
@@ -473,40 +197,41 @@ class CHEM extends StatelessWidget {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.amber.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.amber.shade700, 
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.amber.shade100,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "       CHEMISTRY",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
+                                GestureDetector(
+                                  child: Container(
+                                    height: 70,
+                                    width: 270,
+                                    decoration: BoxDecoration( color: Colors.amber.shade300,
+                                      borderRadius: BorderRadius.circular(9),
+                                      boxShadow: [
+                                        BoxShadow(
+                                            color: Colors.amber.shade700, 
+                                            offset: const Offset(4.0, 4.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9),
+                                        BoxShadow(
+                                            color: Colors.amber.shade100,
+                                            offset: const Offset(-5.0, -5.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9)
+                                      ],
+                                    ),
+                                    child: Row(
+                                      children: const [
+                                        Center(
+                                          child: Text(
+                                            "             CHEMISTRY", 
+                                            style: TextStyle(
+                                                fontSize: 21,
+                                                fontWeight: FontWeight.bold),
+                                          ),
                                         ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
+                                        SizedBox(
+                                          width: 32,
+                                        ),
+                                        Icon(Icons.keyboard_arrow_right),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ],
@@ -517,14 +242,10 @@ class CHEM extends StatelessWidget {
                     ),
                   ),
                   
-                const SizedBox(
-                    height: 35,
+  
+                    const SizedBox(
+                    height: 35 ,
                   ),
-
-
-
-
-                  
                   Padding(
                     padding: const EdgeInsets.only(bottom: 19.0),
                     child: Row(
@@ -534,7 +255,7 @@ class CHEM extends StatelessWidget {
                         Row(
                           children: [
                             const SizedBox(
-                              width: 31,
+                              width: 15,
                             ),
                             // ignore: sized_box_for_whitespace
 
@@ -544,40 +265,41 @@ class CHEM extends StatelessWidget {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.amber.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.amber.shade700, 
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.amber.shade100,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "       CHEMISTRY",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
+                                GestureDetector(
+                                  child: Container(
+                                    height: 70,
+                                    width: 270,
+                                    decoration: BoxDecoration( color: Colors.amber.shade300,
+                                      borderRadius: BorderRadius.circular(9),
+                                      boxShadow: [
+                                        BoxShadow(
+                                            color: Colors.amber.shade700, 
+                                            offset: const Offset(4.0, 4.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9),
+                                        BoxShadow(
+                                            color: Colors.amber.shade100,
+                                            offset: const Offset(-5.0, -5.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9)
+                                      ],
+                                    ),
+                                    child: Row(
+                                      children: const [
+                                        Center(
+                                          child: Text(
+                                            "             CHEMISTRY", 
+                                            style: TextStyle(
+                                                fontSize: 21,
+                                                fontWeight: FontWeight.bold),
+                                          ),
                                         ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
+                                        SizedBox(
+                                          width: 32,
+                                        ),
+                                        Icon(Icons.keyboard_arrow_right),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ],
@@ -588,14 +310,10 @@ class CHEM extends StatelessWidget {
                     ),
                   ),
                   
-                  const SizedBox(
-                    height: 35,
+  
+                    const SizedBox(
+                    height: 35 ,
                   ),
-
-
-
-
-                  
                   Padding(
                     padding: const EdgeInsets.only(bottom: 19.0),
                     child: Row(
@@ -605,7 +323,7 @@ class CHEM extends StatelessWidget {
                         Row(
                           children: [
                             const SizedBox(
-                              width: 31,
+                              width: 15,
                             ),
                             // ignore: sized_box_for_whitespace
 
@@ -615,40 +333,41 @@ class CHEM extends StatelessWidget {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.amber.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.amber.shade700, 
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.amber.shade100,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "       CHEMISTRY",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
+                                GestureDetector(
+                                  child: Container(
+                                    height: 70,
+                                    width: 270,
+                                    decoration: BoxDecoration( color: Colors.amber.shade300,
+                                      borderRadius: BorderRadius.circular(9),
+                                      boxShadow: [
+                                        BoxShadow(
+                                            color: Colors.amber.shade700, 
+                                            offset: const Offset(4.0, 4.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9),
+                                        BoxShadow(
+                                            color: Colors.amber.shade100,
+                                            offset: const Offset(-5.0, -5.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9)
+                                      ],
+                                    ),
+                                    child: Row(
+                                      children: const [
+                                        Center(
+                                          child: Text(
+                                            "             CHEMISTRY", 
+                                            style: TextStyle(
+                                                fontSize: 21,
+                                                fontWeight: FontWeight.bold),
+                                          ),
                                         ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
+                                        SizedBox(
+                                          width: 32,
+                                        ),
+                                        Icon(Icons.keyboard_arrow_right),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ],
@@ -659,14 +378,10 @@ class CHEM extends StatelessWidget {
                     ),
                   ),
                   
-                  const SizedBox(
-                    height: 35,
+  
+                    const SizedBox(
+                    height: 35 ,
                   ),
-
-
-
-
-                  
                   Padding(
                     padding: const EdgeInsets.only(bottom: 19.0),
                     child: Row(
@@ -676,7 +391,7 @@ class CHEM extends StatelessWidget {
                         Row(
                           children: [
                             const SizedBox(
-                              width: 31,
+                              width: 15,
                             ),
                             // ignore: sized_box_for_whitespace
 
@@ -686,40 +401,41 @@ class CHEM extends StatelessWidget {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.amber.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.amber.shade700, 
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.amber.shade100,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "       CHEMISTRY",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
+                                GestureDetector(
+                                  child: Container(
+                                    height: 70,
+                                    width: 270,
+                                    decoration: BoxDecoration( color: Colors.amber.shade300,
+                                      borderRadius: BorderRadius.circular(9),
+                                      boxShadow: [
+                                        BoxShadow(
+                                            color: Colors.amber.shade700, 
+                                            offset: const Offset(4.0, 4.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9),
+                                        BoxShadow(
+                                            color: Colors.amber.shade100,
+                                            offset: const Offset(-5.0, -5.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9)
+                                      ],
+                                    ),
+                                    child: Row(
+                                      children: const [
+                                        Center(
+                                          child: Text(
+                                            "             CHEMISTRY", 
+                                            style: TextStyle(
+                                                fontSize: 21,
+                                                fontWeight: FontWeight.bold),
+                                          ),
                                         ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
+                                        SizedBox(
+                                          width: 32,
+                                        ),
+                                        Icon(Icons.keyboard_arrow_right),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ],
@@ -730,14 +446,9 @@ class CHEM extends StatelessWidget {
                     ),
                   ),
                   
-                  const SizedBox(
-                    height: 35,
+    const SizedBox(
+                    height: 35 ,
                   ),
-
-
-
-
-                  
                   Padding(
                     padding: const EdgeInsets.only(bottom: 19.0),
                     child: Row(
@@ -747,7 +458,7 @@ class CHEM extends StatelessWidget {
                         Row(
                           children: [
                             const SizedBox(
-                              width: 31,
+                              width: 15,
                             ),
                             // ignore: sized_box_for_whitespace
 
@@ -757,40 +468,41 @@ class CHEM extends StatelessWidget {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.amber.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.amber.shade700, 
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.amber.shade100,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "       CHEMISTRY",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
+                                GestureDetector(
+                                  child: Container(
+                                    height: 70,
+                                    width: 270,
+                                    decoration: BoxDecoration( color: Colors.amber.shade300,
+                                      borderRadius: BorderRadius.circular(9),
+                                      boxShadow: [
+                                        BoxShadow(
+                                            color: Colors.amber.shade700, 
+                                            offset: const Offset(4.0, 4.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9),
+                                        BoxShadow(
+                                            color: Colors.amber.shade100,
+                                            offset: const Offset(-5.0, -5.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9)
+                                      ],
+                                    ),
+                                    child: Row(
+                                      children: const [
+                                        Center(
+                                          child: Text(
+                                            "             CHEMISTRY", 
+                                            style: TextStyle(
+                                                fontSize: 21,
+                                                fontWeight: FontWeight.bold),
+                                          ),
                                         ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
+                                        SizedBox(
+                                          width: 32,
+                                        ),
+                                        Icon(Icons.keyboard_arrow_right),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ],
@@ -801,14 +513,9 @@ class CHEM extends StatelessWidget {
                     ),
                   ),
                   
-                  const SizedBox(
-                    height: 35,
+    const SizedBox(
+                    height: 35 ,
                   ),
-
-
-
-
-                  
                   Padding(
                     padding: const EdgeInsets.only(bottom: 19.0),
                     child: Row(
@@ -818,7 +525,7 @@ class CHEM extends StatelessWidget {
                         Row(
                           children: [
                             const SizedBox(
-                              width: 31,
+                              width: 15,
                             ),
                             // ignore: sized_box_for_whitespace
 
@@ -828,40 +535,41 @@ class CHEM extends StatelessWidget {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.amber.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.amber.shade700, 
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.amber.shade100,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "       CHEMISTRY",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
+                                GestureDetector(
+                                  child: Container(
+                                    height: 70,
+                                    width: 270,
+                                    decoration: BoxDecoration( color: Colors.amber.shade300,
+                                      borderRadius: BorderRadius.circular(9),
+                                      boxShadow: [
+                                        BoxShadow(
+                                            color: Colors.amber.shade700, 
+                                            offset: const Offset(4.0, 4.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9),
+                                        BoxShadow(
+                                            color: Colors.amber.shade100,
+                                            offset: const Offset(-5.0, -5.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9)
+                                      ],
+                                    ),
+                                    child: Row(
+                                      children: const [
+                                        Center(
+                                          child: Text(
+                                            "             CHEMISTRY", 
+                                            style: TextStyle(
+                                                fontSize: 21,
+                                                fontWeight: FontWeight.bold),
+                                          ),
                                         ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
+                                        SizedBox(
+                                          width: 32,
+                                        ),
+                                        Icon(Icons.keyboard_arrow_right),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ],
@@ -872,14 +580,9 @@ class CHEM extends StatelessWidget {
                     ),
                   ),
                   
-                  const SizedBox(
-                    height: 35,
+    const SizedBox(
+                    height: 35 ,
                   ),
-
-
-
-
-                  
                   Padding(
                     padding: const EdgeInsets.only(bottom: 19.0),
                     child: Row(
@@ -889,7 +592,7 @@ class CHEM extends StatelessWidget {
                         Row(
                           children: [
                             const SizedBox(
-                              width: 31,
+                              width: 15,
                             ),
                             // ignore: sized_box_for_whitespace
 
@@ -899,40 +602,41 @@ class CHEM extends StatelessWidget {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.amber.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.amber.shade700, 
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.amber.shade100,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "       CHEMISTRY",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
+                                GestureDetector(
+                                  child: Container(
+                                    height: 70,
+                                    width: 270,
+                                    decoration: BoxDecoration( color: Colors.amber.shade300,
+                                      borderRadius: BorderRadius.circular(9),
+                                      boxShadow: [
+                                        BoxShadow(
+                                            color: Colors.amber.shade700, 
+                                            offset: const Offset(4.0, 4.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9),
+                                        BoxShadow(
+                                            color: Colors.amber.shade100,
+                                            offset: const Offset(-5.0, -5.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9)
+                                      ],
+                                    ),
+                                    child: Row(
+                                      children: const [
+                                        Center(
+                                          child: Text(
+                                            "             CHEMISTRY", 
+                                            style: TextStyle(
+                                                fontSize: 21,
+                                                fontWeight: FontWeight.bold),
+                                          ),
                                         ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
+                                        SizedBox(
+                                          width: 32,
+                                        ),
+                                        Icon(Icons.keyboard_arrow_right),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ],
@@ -943,14 +647,9 @@ class CHEM extends StatelessWidget {
                     ),
                   ),
                   
-                  const SizedBox(
-                    height: 35,
+    const SizedBox(
+                    height: 35 ,
                   ),
-
-
-
-
-                  
                   Padding(
                     padding: const EdgeInsets.only(bottom: 19.0),
                     child: Row(
@@ -960,7 +659,7 @@ class CHEM extends StatelessWidget {
                         Row(
                           children: [
                             const SizedBox(
-                              width: 31,
+                              width: 15,
                             ),
                             // ignore: sized_box_for_whitespace
 
@@ -970,40 +669,41 @@ class CHEM extends StatelessWidget {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.amber.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.amber.shade700, 
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.amber.shade100,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "       CHEMISTRY",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
+                                GestureDetector(
+                                  child: Container(
+                                    height: 70,
+                                    width: 270,
+                                    decoration: BoxDecoration( color: Colors.amber.shade300,
+                                      borderRadius: BorderRadius.circular(9),
+                                      boxShadow: [
+                                        BoxShadow(
+                                            color: Colors.amber.shade700, 
+                                            offset: const Offset(4.0, 4.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9),
+                                        BoxShadow(
+                                            color: Colors.amber.shade100,
+                                            offset: const Offset(-5.0, -5.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9)
+                                      ],
+                                    ),
+                                    child: Row(
+                                      children: const [
+                                        Center(
+                                          child: Text(
+                                            "             CHEMISTRY", 
+                                            style: TextStyle(
+                                                fontSize: 21,
+                                                fontWeight: FontWeight.bold),
+                                          ),
                                         ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
+                                        SizedBox(
+                                          width: 32,
+                                        ),
+                                        Icon(Icons.keyboard_arrow_right),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ],
@@ -1014,220 +714,9 @@ class CHEM extends StatelessWidget {
                     ),
                   ),
                   
-                  const SizedBox(
-                    height: 35,
-                  ),
-
-
-
-
-                  
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 31,
-                            ),
-                            // ignore: sized_box_for_whitespace
-
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.amber.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.amber.shade700, 
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.amber.shade100,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "       CHEMISTRY",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  
-
-                  const SizedBox(
-                    height: 35,
-                  ),
-
-
-
-
-                  
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 31,
-                            ),
-                            // ignore: sized_box_for_whitespace
-
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.amber.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.amber.shade700, 
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.amber.shade100,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "       CHEMISTRY",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  
-                  const SizedBox(
-                    height: 35,
-                  ),
-
-
-
-
-                  
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 31,
-                            ),
-                            // ignore: sized_box_for_whitespace
-
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 80,
-                                  width: 270,
-                                  decoration: BoxDecoration(
-                                    color: Colors.amber.shade300,
-                                    borderRadius: BorderRadius.circular(9),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.amber.shade700, 
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      BoxShadow(
-                                          color: Colors.amber.shade100,
-                                          offset: const Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: const [
-                                      Center(
-                                        child: Text(
-                                          "       CHEMISTRY",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 32,
-                                      ),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  
+  
+                 
+  
 
                 ],
               ),

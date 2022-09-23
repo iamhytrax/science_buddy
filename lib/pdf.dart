@@ -10,8 +10,13 @@ class PDF extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
-      body: SfPdfViewer.network(
-              'https://cdn.syncfusion.com/content/PDFViewer/flutter-succinctly.pdf'));
+        
+      body: Container(
+        color: Colors.amber,
+
+        height: 1000,
+        child: SfPdfViewer.network( 
+                'https://cdn.syncfusion.com/content/PDFViewer/flutter-succinctly.pdf'),
+      ));
   }
 }

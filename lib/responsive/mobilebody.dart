@@ -4,6 +4,7 @@ import 'package:science_buddy/pdf.dart';
 import 'package:science_buddy/util/chem.dart';
 
 import 'package:science_buddy/util/maths.dart';
+import 'package:science_buddy/util/pdf1.dart';
 import 'package:science_buddy/util/phy.dart';
 
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -20,9 +21,7 @@ final List<Widget> pages=[const PHY(),const CHEM(),const MATHS()];
         backgroundColor: Colors.grey.shade300,
     
         //app title////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        body: AspectRatio(
-          aspectRatio: 9 / 16,
-          child: CustomScrollView(
+        body:  CustomScrollView(
             slivers: [
               SliverAppBar.large(
                 // leading:  IconButton(
@@ -404,7 +403,7 @@ final List<Widget> pages=[const PHY(),const CHEM(),const MATHS()];
                             ),
                             onTap: () => Navigator.push(
                               context,
-                              MaterialPageRoute(builder: (context) => const PHY()),
+                              MaterialPageRoute(builder: (context) => PDF2()),
                             ),
                           ),
                         ]),
@@ -787,7 +786,7 @@ final List<Widget> pages=[const PHY(),const CHEM(),const MATHS()];
                 ),
               ),
             ],
-          ),
+          
         ),
      
     bottomNavigationBar:  GNav(

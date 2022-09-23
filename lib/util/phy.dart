@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:science_buddy/util/pdf1.dart';
 
 
 
@@ -68,7 +69,7 @@ class PHY extends StatelessWidget {
                                       boxShadow: [
                                         BoxShadow(
                                             color: Colors.red.shade600,
-                                            offset: const Offset(4.0, 4.0),
+                                            offset: const Offset(4.0, 4.0), 
                                             blurRadius: 23,
                                             spreadRadius: 9),
                                         BoxShadow(
@@ -95,6 +96,10 @@ class PHY extends StatelessWidget {
                                       ],
                                     ),
                                   ),
+                                   onTap: () => Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => const PDFP1()),
+                            ),
                                 ),
                               ],
                             ),
@@ -107,6 +112,9 @@ class PHY extends StatelessWidget {
                     const SizedBox(
                     height: 35,
                   ),
+
+
+
                   Padding(
                     padding: const EdgeInsets.only(bottom: 19.0),
                     child: Row(
@@ -163,6 +171,10 @@ class PHY extends StatelessWidget {
                                       ],
                                     ),
                                   ),
+                                   onTap: () => Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => const PDFP2()),
+                            ),
                                 ),
                               ],
                             ),
@@ -230,6 +242,10 @@ class PHY extends StatelessWidget {
                                       ],
                                     ),
                                   ),
+                                   onTap: () => Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => const PDFP3()),
+                            ),
                                 ),
                               ],
                             ),

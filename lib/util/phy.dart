@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:science_buddy/util/pdf1.dart';
 
 
 
@@ -96,10 +95,7 @@ class PHY extends StatelessWidget {
                                       ],
                                     ),
                                   ),
-                                   onTap: () => Navigator.push(
-                              context,
-                              MaterialPageRoute(builder: (context) => const PDFP1()),
-                            ),
+                                 
                                 ),
                               ],
                             ),
@@ -171,10 +167,7 @@ class PHY extends StatelessWidget {
                                       ],
                                     ),
                                   ),
-                                   onTap: () => Navigator.push(
-                              context,
-                              MaterialPageRoute(builder: (context) => const PDFP2()),
-                            ),
+                                  
                                 ),
                               ],
                             ),
@@ -242,10 +235,7 @@ class PHY extends StatelessWidget {
                                       ],
                                     ),
                                   ),
-                                   onTap: () => Navigator.push(
-                              context,
-                              MaterialPageRoute(builder: (context) => const PDFP3()),
-                            ),
+                                   
                                 ),
                               ],
                             ),

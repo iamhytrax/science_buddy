@@ -12,93 +12,69 @@ class PDF2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
    
-      body: Container( 
-        child: const PDF().cachedFromUrl(
-        "https://sciencebuddy893527332.files.wordpress.com/2022/09/01.-python-crash-course_-a-hands-on-project-based-introduction-to-programming-pdfdrive-1.pdf",
-        placeholder: (double progress) => Center(child: Text('$progress %')),
-        errorWidget: (dynamic error) => Center(child: Text(error.toString())),
-      ),
-              
-      )
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children:  <Widget>[
+
+          
+             
+          TextButton(
+            onPressed:() => Navigator.push(
+              context,
+              MaterialPageRoute<dynamic>(
+                builder: (_) =>  const PDFViewerCachedFromUrl (
+             url: 'https://sciencebuddy893527332.files.wordpress.com/2022/09/01.-python-crash-course_-a-hands-on-project-based-introduction-to-programming-pdfdrive-1.pdf',
+           ),
+            ),
+            ),
+            child: const Text('PDF From Url'),
+          ),
+         
+     
           
        
-      
+        ]
+      )
     );
   }
 }
 
 
+class PDFViewerFromUrl extends StatelessWidget {
+  const PDFViewerFromUrl({Key? key, required this.url}) : super(key: key);
 
-class PDFP1 extends StatelessWidget {
-  const PDFP1({super.key});
+  final String url;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-   
-      body: Container( 
-        child: const PDF().cachedFromUrl(
-        "https://sciencebuddy893527332.files.wordpress.com/2022/09/01.-python-crash-course_-a-hands-on-project-based-introduction-to-programming-pdfdrive-1.pdf",
+      
+      body: const PDF().fromUrl(
+        url,
         placeholder: (double progress) => Center(child: Text('$progress %')),
         errorWidget: (dynamic error) => Center(child: Text(error.toString())),
       ),
-              
-      )
-          
-       
-      
     );
   }
 }
 
+class PDFViewerCachedFromUrl extends StatelessWidget {
+  const PDFViewerCachedFromUrl({Key? key, required this.url}) : super(key: key);
 
-
-
-
-class PDFP2 extends StatelessWidget {
-  const PDFP2({super.key});
+  final String url;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-   
-      body: Container( 
-        child: const PDF().cachedFromUrl(
-        "https://sciencebuddy893527332.files.wordpress.com/2022/09/01.-python-crash-course_-a-hands-on-project-based-introduction-to-programming-pdfdrive-1.pdf",
+      appBar: AppBar(
+        title: const Text('Cached PDF From Url'),
+      ),
+      body: const PDF().cachedFromUrl(
+        url,
         placeholder: (double progress) => Center(child: Text('$progress %')),
         errorWidget: (dynamic error) => Center(child: Text(error.toString())),
       ),
-              
-      )
-          
-       
-      
     );
   }
 }
-
-
-
-
-class PDFP3 extends StatelessWidget {
-  const PDFP3({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-   
-      body: Container( 
-        child: const PDF().cachedFromUrl(
-        "https://sciencebuddy893527332.files.wordpress.com/2022/09/01.-python-crash-course_-a-hands-on-project-based-introduction-to-programming-pdfdrive-1.pdf",
-        placeholder: (double progress) => Center(child: Text('$progress %')),
-        errorWidget: (dynamic error) => Center(child: Text(error.toString())),
-      ),
-              
-      )
-          
-       
-      
-    );
-  }
-}
-

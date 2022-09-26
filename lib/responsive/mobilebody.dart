@@ -1,235 +1,86 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-import 'package:science_buddy/pdf.dart';
+
 import 'package:science_buddy/util/chem.dart';
 
 import 'package:science_buddy/util/maths.dart';
+import 'package:science_buddy/util/pdf.dart';
 import 'package:science_buddy/util/pdf1.dart';
 import 'package:science_buddy/util/phy.dart';
 
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
+// ignore: must_be_immutable
 class MOB extends StatelessWidget {
   MOB({super.key});
-final List<Widget> pages=[const PHY(),const CHEM(),const MATHS()];
+  final List<Widget> pages = [const PHY(), const CHEM(), const MATHS()];
   final _controller = PageController();
+  String a = "MANOJ"; 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: <Widget>[
-       Scaffold(
+    return Stack(children: <Widget>[
+      Scaffold(
         backgroundColor: Colors.grey.shade300,
-    
+
         //app title////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        body:  CustomScrollView(
-            slivers: [
-              SliverAppBar.large(
-                // leading:  IconButton(
-                //  onPressed: () {},
-                //
-                //   icon: const Icon(Icons.menu,
-                //   size: 33,)
-                //  ),
-                title: const Text(
-                  "Science Buddy",
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 28,
-                    fontWeight: FontWeight.bold,
-                  ),
+        body: CustomScrollView(
+          slivers: [
+            SliverAppBar.large(
+              // leading:  IconButton(
+              //  onPressed: () {},
+              //
+              //   icon: const Icon(Icons.menu,
+              //   size: 33,)
+              //  ),
+
+              title:  Text(
+                "Science Buddy $a" , 
+                style: const TextStyle(
+                  color: Colors.black,
+                  fontSize: 28,
+                  fontWeight: FontWeight.bold,
                 ),
-            
-                actions: [
-                  IconButton(
-                      onPressed: () {},
-                      icon: const Icon(
-                        Icons.star_outline_sharp,
-                        size: 30,
-                      ))
-                ],
               ),
-              SliverToBoxAdapter(
-                child: SingleChildScrollView(
-                  //        // scrollDirection: Axis.vertical,
-            
-                  child: Column(children: [
-                    const SizedBox(
-                      height: 40,
-                    ),
-                    //cards
-            
-                    ////////////////////////////////////////////////cards//////////////////////////////////////////////////////////////////////////////////////////////////////
-            
-                    SizedBox(
-                      height: 150,
-                      child: PageView(
-                        controller: _controller,
-                        scrollDirection: Axis.horizontal,
-                        children: [
-                          GestureDetector(
-                            child: Container(
-                              width: 0,
-                              padding: const EdgeInsets.all(31),
-                              decoration: BoxDecoration(
-                                  color: const Color.fromARGB(255, 255, 80, 80),
-                                  borderRadius: BorderRadius.circular(50)),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: const [
-                                  Text(
-                                    'FORMULA',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    height: 11,
-                                  ),
-                                  Text("PHYSICS",
-                                      style: TextStyle(
-                                          fontSize: 30, color: Colors.white)),
-                                  //  Row(
-                                  //    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  //    children: const [
-                                  //      // card number
-                                  //      Text("wsd"),
-                                  //      // card expiry date
-                                  //      Text("awd"),
-                                  //   ],
-                                  // ),
-                                ],
-                              ),
-                            ),
-                            onTap: () => Navigator.push(
-                              context,
-                              MaterialPageRoute(builder: (context) => const PHY()),
-                            ),
-                          ),
-                          GestureDetector(
-                            child: Container(
-                              width: 300,
-                              padding: const EdgeInsets.all(31),
-                              decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(50)),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: const [
-                                  Text(
-                                    'FORMULA',
-                                    style: TextStyle(
-                                      color: Colors.black,
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    height: 11,
-                                  ),
-                                  Text("CHEMISTRY",
-                                      style: TextStyle(
-                                          fontSize: 30, color: Colors.black)),
-                                  //Row(
-                                  //  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  //  children: const [
-                                  //    // card number
-                                  //    Text("wsd"),
-                                  //    // card expiry date
-                                  //    Text("awd"),
-                                  //  ],
-                                  //),
-                                ],
-                              ),
-                            ),
-                            onTap: () => Navigator.push(
-                              context,
-                              MaterialPageRoute(builder: (context) => const CHEM()),
-                            ),
-                          ),
-                          GestureDetector(
-                            child: Container(
-                              width: 300,
-                              padding: const EdgeInsets.all(31),
-                              decoration: BoxDecoration(
-                                  color: Colors.cyan,
-                                  borderRadius: BorderRadius.circular(50)),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: const [
-                                  Text(
-                                    'FORMULA',
-                                    style: TextStyle(
-                                      color: Color.fromARGB(255, 0, 0, 0),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    height: 11,
-                                  ),
-                                  Text("MATHEMATICS",
-                                      style: TextStyle(
-                                          fontSize: 30,
-                                          color: Color.fromARGB(255, 0, 0, 0))),
-                                  //Row(
-                                  //  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  //  children: const [
-                                  //    // card number
-                                  //    Text("wsd"),
-                                  //    // card expiry date
-                                  //    Text("awd"),
-                                  //  ],
-                                  //),
-                                ],
-                              ),
-                            ),
-                            onTap: () => Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const MATHS()),
-                            ),
-                          ),
-                          Container(
-                            width: 300,
+
+              actions: [
+                IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      Icons.star_outline_sharp,
+                      size: 30,
+                    ))
+              ],
+            ),
+            SliverToBoxAdapter(
+              child: SingleChildScrollView(
+                //        // scrollDirection: Axis.vertical,
+
+                child: Column(children: [
+                  const SizedBox(
+                    height: 40,
+                  ),
+                  //cards
+
+                  ////////////////////////////////////////////////cards//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                  SizedBox(
+                    height: 150,
+                    child: PageView(
+                      controller: _controller,
+                      scrollDirection: Axis.horizontal,
+                      children: [
+                        GestureDetector(
+                          child: Container(
+                            width: 0,
                             padding: const EdgeInsets.all(31),
                             decoration: BoxDecoration(
-                                color: const Color.fromARGB(255, 53, 223, 11),
+                                color: const Color.fromARGB(255, 255, 80, 80),
                                 borderRadius: BorderRadius.circular(50)),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: const [
                                 Text(
-                                  'QUICK LEARN',
-                                  style: TextStyle(
-                                    color: Color.fromARGB(255, 0, 0, 0),
-                                  ),
-                                ),
-                                SizedBox(
-                                  height: 11,
-                                ),
-                                Text("BRAIN MAP",
-                                    style: TextStyle(
-                                        fontSize: 30,
-                                        color: Color.fromARGB(255, 0, 0, 0))),
-                                // Row(
-                                //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                //   children: const [
-                                //     // card number
-                                //     Text("wsd"),
-                                //     // card expiry date
-                                //     Text("awd"),
-                                //   ],
-                                // ),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            width: 300,
-                            padding: const EdgeInsets.all(31),
-                            decoration: BoxDecoration(
-                                color: Colors.purple,
-                                borderRadius: BorderRadius.circular(50)),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: const [
-                                Text(
-                                  'chapters',
+                                  'FORMULA',
                                   style: TextStyle(
                                     color: Colors.white,
                                   ),
@@ -237,43 +88,9 @@ final List<Widget> pages=[const PHY(),const CHEM(),const MATHS()];
                                 SizedBox(
                                   height: 11,
                                 ),
-                                Text("NOTES",
+                                Text("PHYSICS",
                                     style: TextStyle(
                                         fontSize: 30, color: Colors.white)),
-                                // Row(
-                                //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                //   children: const [
-                                //     // card number
-                                //     Text("wsd"),
-                                //     // card expiry date
-                                //     Text("awd"),
-                                //   ],
-                                // ),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            width: 300,
-                            padding: const EdgeInsets.all(31),
-                            decoration: BoxDecoration(
-                                color: const Color.fromARGB(255, 217, 233, 0),
-                                borderRadius: BorderRadius.circular(50)),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: const [
-                                Text(
-                                  'socials',
-                                  style: TextStyle(
-                                    color: Color.fromARGB(255, 0, 0, 0),
-                                  ),
-                                ),
-                                SizedBox(
-                                  height: 11,
-                                ),
-                                Text("CONNECT US",
-                                    style: TextStyle(
-                                        fontSize: 30,
-                                        color: Color.fromARGB(255, 0, 0, 0))),
                                 //  Row(
                                 //    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 //    children: const [
@@ -281,590 +98,772 @@ final List<Widget> pages=[const PHY(),const CHEM(),const MATHS()];
                                 //      Text("wsd"),
                                 //      // card expiry date
                                 //      Text("awd"),
-                                //    ],
-                                //  ),
+                                //   ],
+                                // ),
                               ],
                             ),
                           ),
-                        ],
-                      ),
-                    ),
-            
-                    /////////////////////////////////////////////////////////////////////////////////////////////////////////    //page/screen indicator
-                    const SizedBox(
-                      height: 23,
-                    ),
-                    SmoothPageIndicator(
-                      controller: _controller,
-                      count: 6,
-                      axisDirection: Axis.horizontal,
-                      effect: CustomizableEffect(
-                        activeDotDecoration: DotDecoration(
-                          width: 32,
-                          height: 12,
-                          // color: Colors.blue.shade900,
-                          rotationAngle: 180,
-                          verticalOffset: -50,
-                          borderRadius: BorderRadius.circular(24),
-                          dotBorder: const DotBorder(
-                            padding: 2,
-                            width: 2,
-                            color: Color.fromARGB(255, 0, 0, 0),
+                          onTap: () => Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const PHY()),
                           ),
                         ),
-                        dotDecoration: const DotDecoration(
-                          width: 14,
-                          height: 12,
-            
-                          dotBorder: DotBorder(
-                            padding: 0,
-                            width: 1,
-                            color: Colors.black,
+                        GestureDetector(
+                          child: Container(
+                            width: 300,
+                            padding: const EdgeInsets.all(31),
+                            decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(50)),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: const [
+                                Text(
+                                  'FORMULA',
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 11,
+                                ),
+                                Text("CHEMISTRY",
+                                    style: TextStyle(
+                                        fontSize: 30, color: Colors.black)),
+                                //Row(
+                                //  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                //  children: const [
+                                //    // card number
+                                //    Text("wsd"),
+                                //    // card expiry date
+                                //    Text("awd"),
+                                //  ],
+                                //),
+                              ],
+                            ),
                           ),
-                          borderRadius: BorderRadius.only(
-                              topLeft: Radius.circular(9),
-                              topRight: Radius.circular(9),
-                              bottomLeft: Radius.circular(9),
-                              bottomRight: Radius.circular(9)),
-                          // //  borderRadius: BorderRadius.circular(16),
-                          verticalOffset: 0,
+                          onTap: () => Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const CHEM()),
+                          ),
                         ),
-                        spacing: 6.0,
-                        // activeColorOverride: (i) => colors[i],
-                        activeColorOverride: (j) => colors[j],
-                        inActiveColorOverride: (i) => colors[i],
-                      ),
-                    ),
-            
-                    const SizedBox(
-                      height: 23,
-                    ),
-            
-                    /////////box button//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  //box bm and notes
-                    Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          GestureDetector(
-                            child: Container(
-                              height: 80,
-                              //width: 100 ,
-                              padding: const EdgeInsets.all(9),
-                              decoration: BoxDecoration(
-                                color: Colors.grey.shade300,
-                                borderRadius:
-                                    const BorderRadius.all(Radius.circular(20)),
-                                boxShadow: [
-                                  BoxShadow(
-                                      color: Colors.grey.shade500,
-                                      offset: const Offset(4.0, 4.0),
-                                      blurRadius: 23,
-                                      spreadRadius: 9),
-                                  const BoxShadow(
-                                      color: Colors.white,
-                                      offset: Offset(-5.0, -5.0),
-                                      blurRadius: 23,
-                                      spreadRadius: 9),
-                                ],
-                              ), // BoxDecoration
-                              child: Center(
-                                child: Image.asset("assets/images/brainmap.png"),
-                              ),
-                            ),
-                            onTap: () => Navigator.push(
-                              context,
-                              MaterialPageRoute(builder: (context) => const PDF()),
+                        GestureDetector(
+                          child: Container(
+                            width: 300,
+                            padding: const EdgeInsets.all(31),
+                            decoration: BoxDecoration(
+                                color: Colors.cyan,
+                                borderRadius: BorderRadius.circular(50)),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: const [
+                                Text(
+                                  'FORMULA',
+                                  style: TextStyle(
+                                    color: Color.fromARGB(255, 0, 0, 0),
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 11,
+                                ),
+                                Text("MATHEMATICS",
+                                    style: TextStyle(
+                                        fontSize: 30,
+                                        color: Color.fromARGB(255, 0, 0, 0))),
+                                //Row(
+                                //  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                //  children: const [
+                                //    // card number
+                                //    Text("wsd"),
+                                //    // card expiry date
+                                //    Text("awd"),
+                                //  ],
+                                //),
+                              ],
                             ),
                           ),
-                          const SizedBox(height: 2),
-                          GestureDetector(
-                            child: Container(
-                              height: 80,
-                              //width: 100 ,
-                              padding: const EdgeInsets.all(9),
-                              decoration: BoxDecoration(
-                                color: Colors.grey.shade300,
-                                borderRadius: BorderRadius.circular(20),
-                                boxShadow: [
-                                  BoxShadow(
-                                      color: Colors.grey.shade500,
-                                      offset: const Offset(4.0, 4.0),
-                                      blurRadius: 23,
-                                      spreadRadius: 9),
-                                  const BoxShadow(
-                                      color: Colors.white,
-                                      offset: Offset(-5.0, -5.0),
-                                      blurRadius: 23,
-                                      spreadRadius: 9),
-                                ],
-                              ), // BoxDecoration
-                              child: Center(
-                                child: Image.asset("assets/images/notes1.png"),
-                              ),
-                            ),
-                            onTap: () => Navigator.push(
-                              context,
-                              MaterialPageRoute(builder: (context) => PDF2()),
-                            ),
+                          onTap: () => Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const MATHS()),
                           ),
-                        ]),
-            
-                    const SizedBox(
-                      height: 25,
-                    ),
-            
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: const [
-                        Text("BRAIN MAP",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 21,
-                                fontWeight: FontWeight.bold)),
-                        Text("NOTES",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 21)),
+                        ),
+                        Container(
+                          width: 300,
+                          padding: const EdgeInsets.all(31),
+                          decoration: BoxDecoration(
+                              color: const Color.fromARGB(255, 53, 223, 11),
+                              borderRadius: BorderRadius.circular(50)),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: const [
+                              Text(
+                                'QUICK LEARN',
+                                style: TextStyle(
+                                  color: Color.fromARGB(255, 0, 0, 0),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 11,
+                              ),
+                              Text("BRAIN MAP",
+                                  style: TextStyle(
+                                      fontSize: 30,
+                                      color: Color.fromARGB(255, 0, 0, 0))),
+                              // Row(
+                              //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              //   children: const [
+                              //     // card number
+                              //     Text("wsd"),
+                              //     // card expiry date
+                              //     Text("awd"),
+                              //   ],
+                              // ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          width: 300,
+                          padding: const EdgeInsets.all(31),
+                          decoration: BoxDecoration(
+                              color: Colors.purple,
+                              borderRadius: BorderRadius.circular(50)),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: const [
+                              Text(
+                                'chapters',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
+                              SizedBox(
+                                height: 11,
+                              ),
+                              Text("NOTES",
+                                  style: TextStyle(
+                                      fontSize: 30, color: Colors.white)),
+                              // Row(
+                              //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              //   children: const [
+                              //     // card number
+                              //     Text("wsd"),
+                              //     // card expiry date
+                              //     Text("awd"),
+                              //   ],
+                              // ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          width: 300,
+                          padding: const EdgeInsets.all(31),
+                          decoration: BoxDecoration(
+                              color: const Color.fromARGB(255, 217, 233, 0),
+                              borderRadius: BorderRadius.circular(50)),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: const [
+                              Text(
+                                'socials',
+                                style: TextStyle(
+                                  color: Color.fromARGB(255, 0, 0, 0),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 11,
+                              ),
+                              Text("CONNECT US",
+                                  style: TextStyle(
+                                      fontSize: 30,
+                                      color: Color.fromARGB(255, 0, 0, 0))),
+                              //  Row(
+                              //    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              //    children: const [
+                              //      // card number
+                              //      Text("wsd"),
+                              //      // card expiry date
+                              //      Text("awd"),
+                              //    ],
+                              //  ),
+                            ],
+                          ),
+                        ),
                       ],
                     ),
-            
-                    const SizedBox(
-                      height: 25,
-                    ),
-            
-                    ///////////////////////////////////////////////////////list ///////////////////////////////////////////////////////////////////////////
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 19.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Row(
-                            children: [
-                              const SizedBox(
-                                width: 31,
-                              ),
-                              // ignore: sized_box_for_whitespace
-                              GestureDetector(
-                                child: Container(
-                                  height: 100,
-                                  padding: const EdgeInsets.all(0),
-                                  decoration: BoxDecoration(
-                                    color: Colors.grey.shade300,
-                                    borderRadius: BorderRadius.circular(22),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.grey.shade500,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      const BoxShadow(
-                                          color: Colors.white,
-                                          offset: Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Image.asset("assets/images/physics.png"),
-                                ),
-                                onTap: () => Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => const PHY()),
-                                ),
-                              ),
-                              const SizedBox(
-                                width: 30,
-                              ),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  GestureDetector(
-                                    child: Container(
-                                      height: 80,
-                                      width: 190,
-                                      decoration: BoxDecoration(
-                                        color: Colors.grey.shade300,
-                                        borderRadius: BorderRadius.circular(9),
-                                        boxShadow: [
-                                          BoxShadow(
-                                              color: Colors.grey.shade500,
-                                              offset: const Offset(4.0, 4.0),
-                                              blurRadius: 23,
-                                              spreadRadius: 9),
-                                          const BoxShadow(
-                                              color: Colors.white,
-                                              offset: Offset(-5.0, -5.0),
-                                              blurRadius: 23,
-                                              spreadRadius: 9)
-                                        ],
-                                      ),
-                                      child: const Center(
-                                        child: Text(
-                                          "PHYSICS",
-                                          style: TextStyle(
-                                              fontSize: 21,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                    ),
-                                    onTap: () => Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (context) => const PHY()),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ],
-                          )
-                        ],
+                  ),
+
+                  /////////////////////////////////////////////////////////////////////////////////////////////////////////    //page/screen indicator
+                  const SizedBox(
+                    height: 23,
+                  ),
+                  SmoothPageIndicator(
+                    controller: _controller,
+                    count: 6,
+                    axisDirection: Axis.horizontal,
+                    effect: CustomizableEffect(
+                      activeDotDecoration: DotDecoration(
+                        width: 32,
+                        height: 12,
+                        // color: Colors.blue.shade900,
+                        rotationAngle: 180,
+                        verticalOffset: -50,
+                        borderRadius: BorderRadius.circular(24),
+                        dotBorder: const DotBorder(
+                          padding: 2,
+                          width: 2,
+                          color: Color.fromARGB(255, 0, 0, 0),
+                        ),
                       ),
+                      dotDecoration: const DotDecoration(
+                        width: 14,
+                        height: 12,
+
+                        dotBorder: DotBorder(
+                          padding: 0,
+                          width: 1,
+                          color: Colors.black,
+                        ),
+                        borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(9),
+                            topRight: Radius.circular(9),
+                            bottomLeft: Radius.circular(9),
+                            bottomRight: Radius.circular(9)),
+                        // //  borderRadius: BorderRadius.circular(16),
+                        verticalOffset: 0,
+                      ),
+                      spacing: 6.0,
+                      // activeColorOverride: (i) => colors[i],
+                      activeColorOverride: (j) => colors[j],
+                      inActiveColorOverride: (i) => colors[i],
                     ),
-            
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 19.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        //mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Row(
-                            children: [
-                              const SizedBox(
-                                width: 31,
-                              ),
-                              // ignore: sized_box_for_whitespace
-                              GestureDetector(
-                                child: Container(
-                                  height: 100,
-                                  padding: const EdgeInsets.all(12),
-                                  decoration: BoxDecoration(
-                                    color: Colors.grey.shade300,
-                                    borderRadius: BorderRadius.circular(22),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.grey.shade500,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      const BoxShadow(
-                                          color: Colors.white,
-                                          offset: Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
-                                  ),
-                                  child: Image.asset("assets/images/chem.png"),
+                  ),
+
+                  const SizedBox(
+                    height: 23,
+                  ),
+
+                  /////////box button//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  //box bm and notes
+                  Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        GestureDetector(
+                          child: Container(
+                            height: 80,
+                            //width: 100 ,
+                            padding: const EdgeInsets.all(9),
+                            decoration: BoxDecoration(
+                              color: Colors.grey.shade300,
+                              borderRadius:
+                                  const BorderRadius.all(Radius.circular(20)),
+                              boxShadow: [
+                                BoxShadow(
+                                    color: Colors.grey.shade500,
+                                    offset: const Offset(4.0, 4.0),
+                                    blurRadius: 23,
+                                    spreadRadius: 9),
+                                const BoxShadow(
+                                    color: Colors.white,
+                                    offset: Offset(-5.0, -5.0),
+                                    blurRadius: 23,
+                                    spreadRadius: 9),
+                              ],
+                            ), // BoxDecoration
+                            child: Center(
+                              child: Image.asset("assets/images/brainmap.png"),
+                            ),
+                          ),
+                         onTap: () => Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => const HomePage()),
+                          ),
+                        ),
+                        const SizedBox(height: 2),
+                        GestureDetector(
+                          child: Container(
+                            height: 80,
+                            //width: 100 ,
+                            padding: const EdgeInsets.all(9),
+                            decoration: BoxDecoration(
+                              color: Colors.grey.shade300,
+                              borderRadius: BorderRadius.circular(20),
+                              boxShadow: [
+                                BoxShadow(
+                                    color: Colors.grey.shade500,
+                                    offset: const Offset(4.0, 4.0),
+                                    blurRadius: 23,
+                                    spreadRadius: 9),
+                                const BoxShadow(
+                                    color: Colors.white,
+                                    offset: Offset(-5.0, -5.0),
+                                    blurRadius: 23,
+                                    spreadRadius: 9),
+                              ],
+                            ), // BoxDecoration
+                            child: Center(
+                              child: Image.asset("assets/images/notes1.png"),
+                            ),
+                          ),
+                          onTap: () => Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => PDF2()),
+                          ),
+                        ),
+                      ]),
+
+                  const SizedBox(
+                    height: 25,
+                  ),
+
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: const [
+                      Text("BRAIN MAP",
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 21,
+                              fontWeight: FontWeight.bold)),
+                      Text("NOTES",
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 21)),
+                    ],
+                  ),
+
+                  const SizedBox(
+                    height: 25,
+                  ),
+
+                  ///////////////////////////////////////////////////////list ///////////////////////////////////////////////////////////////////////////
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 19.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            const SizedBox(
+                              width: 31,
+                            ),
+                            // ignore: sized_box_for_whitespace
+                            GestureDetector(
+                              child: Container(
+                                height: 100,
+                                padding: const EdgeInsets.all(0),
+                                decoration: BoxDecoration(
+                                  color: Colors.grey.shade300,
+                                  borderRadius: BorderRadius.circular(22),
+                                  boxShadow: [
+                                    BoxShadow(
+                                        color: Colors.grey.shade500,
+                                        offset: const Offset(4.0, 4.0),
+                                        blurRadius: 23,
+                                        spreadRadius: 9),
+                                    const BoxShadow(
+                                        color: Colors.white,
+                                        offset: Offset(-5.0, -5.0),
+                                        blurRadius: 23,
+                                        spreadRadius: 9)
+                                  ],
                                 ),
-                                onTap: () => Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => const CHEM()),
-                                ),
+                                child: Image.asset("assets/images/physics.png"),
                               ),
-                              const SizedBox(
-                                width: 30,
+                              onTap: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const PHY()),
                               ),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  GestureDetector(
-                                    child: Container(
-                                      height: 80,
-                                      width: 190,
-                                      decoration: BoxDecoration(
-                                        color: Colors.grey.shade300,
-                                        borderRadius: BorderRadius.circular(9),
-                                        boxShadow: [
-                                          BoxShadow(
-                                              color: Colors.grey.shade500,
-                                              offset: const Offset(4.0, 4.0),
-                                              blurRadius: 23,
-                                              spreadRadius: 9),
-                                          const BoxShadow(
-                                              color: Colors.white,
-                                              offset: Offset(-5.0, -5.0),
-                                              blurRadius: 23,
-                                              spreadRadius: 9)
-                                        ],
-                                      ),
-                                      child: const Center(
-                                        child: Text(
-                                          " CHEMISTRY",
-                                          style: TextStyle(
+                            ),
+                            const SizedBox(
+                              width: 30,
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                GestureDetector(
+                                  child: Container(
+                                    height: 80,
+                                    width: 190,
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey.shade300,
+                                      borderRadius: BorderRadius.circular(9),
+                                      boxShadow: [
+                                        BoxShadow(
+                                            color: Colors.grey.shade500,
+                                            offset: const Offset(4.0, 4.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9),
+                                        const BoxShadow(
+                                            color: Colors.white,
+                                            offset: Offset(-5.0, -5.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9)
+                                      ],
+                                    ),
+                                    child: const Center(
+                                      child: Text(
+                                        "PHYSICS",
+                                        style: TextStyle(
                                             fontSize: 21,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                        ),
+                                            fontWeight: FontWeight.bold),
                                       ),
                                     ),
-                                    onTap: () => Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (context) => const CHEM()),
-                                    ),
-                                  )
-                                ],
-                              ),
-                            ],
-                          )
-                        ],
-                      ),
-                    ),
-            
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 19.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        //mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Row(
-                            children: [
-                              const SizedBox(
-                                width: 31,
-                              ),
-                              // ignore: sized_box_for_whitespace
-                              GestureDetector(
-                                child: Container(
-                                  height: 100,
-                                  padding: const EdgeInsets.all(0),
-                                  decoration: BoxDecoration(
-                                    color: Colors.grey.shade300,
-                                    borderRadius: BorderRadius.circular(22),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.grey.shade500,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      const BoxShadow(
-                                          color: Colors.white,
-                                          offset: Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
                                   ),
-                                  child: Image.asset("assets/images/math.png"),
-                                ),
-                                onTap: () => Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => const MATHS()),
-                                ),
-                              ),
-                              const SizedBox(
-                                width: 30,
-                              ),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  GestureDetector(
-                                    child: Container(
-                                      height: 80,
-                                      width: 190,
-                                      decoration: BoxDecoration(
-                                        color: Colors.grey.shade300,
-                                        borderRadius: BorderRadius.circular(9),
-                                        boxShadow: [
-                                          BoxShadow(
-                                              color: Colors.grey.shade500,
-                                              offset: const Offset(4.0, 4.0),
-                                              blurRadius: 23,
-                                              spreadRadius: 9),
-                                          const BoxShadow(
-                                              color: Colors.white,
-                                              offset: Offset(-5.0, -5.0),
-                                              blurRadius: 23,
-                                              spreadRadius: 9)
-                                        ],
-                                      ),
-                                      child: const Center(
-                                        child: Text(
-                                          "MATHEMATICS",
-                                          style: TextStyle(
-                                            fontSize: 21,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    onTap: () => Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (context) => const MATHS()),
-                                    ),
-                                  )
-                                ],
-                              ),
-                            ],
-                          )
-                        ],
-                      ),
-                    ),
-            
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 19.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            
-                        //mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Row(
-                            children: [
-                              const SizedBox(
-                                width: 31,
-                              ),
-                              // ignore: sized_box_for_whitespace
-                              GestureDetector(
-                                child: Container(
-                                  height: 100,
-                                  padding: const EdgeInsets.all(12),
-                                  decoration: BoxDecoration(
-                                    color: Colors.grey.shade300,
-                                    borderRadius: BorderRadius.circular(22),
-                                    boxShadow: [
-                                      BoxShadow(
-                                          color: Colors.grey.shade500,
-                                          offset: const Offset(4.0, 4.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9),
-                                      const BoxShadow(
-                                          color: Colors.white,
-                                          offset: Offset(-5.0, -5.0),
-                                          blurRadius: 23,
-                                          spreadRadius: 9)
-                                    ],
+                                  onTap: () => Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => const PHY()),
                                   ),
-                                  child: Image.asset("assets/images/test.png"),
                                 ),
+                              ],
+                            ),
+                          ],
+                        )
+                      ],
+                    ),
+                  ),
+
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 19.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      //mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            const SizedBox(
+                              width: 31,
+                            ),
+                            // ignore: sized_box_for_whitespace
+                            GestureDetector(
+                              child: Container(
+                                height: 100,
+                                padding: const EdgeInsets.all(12),
+                                decoration: BoxDecoration(
+                                  color: Colors.grey.shade300,
+                                  borderRadius: BorderRadius.circular(22),
+                                  boxShadow: [
+                                    BoxShadow(
+                                        color: Colors.grey.shade500,
+                                        offset: const Offset(4.0, 4.0),
+                                        blurRadius: 23,
+                                        spreadRadius: 9),
+                                    const BoxShadow(
+                                        color: Colors.white,
+                                        offset: Offset(-5.0, -5.0),
+                                        blurRadius: 23,
+                                        spreadRadius: 9)
+                                  ],
+                                ),
+                                child: Image.asset("assets/images/chem.png"),
                               ),
-                              const SizedBox(
-                                width: 30,
+                              onTap: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const CHEM()),
                               ),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  GestureDetector(
-                                    child: Container(
-                                      height: 80,
-                                      width: 190,
-                                      decoration: BoxDecoration(
-                                        color: Colors.grey.shade300,
-                                        borderRadius: BorderRadius.circular(9),
-                                        boxShadow: [
-                                          BoxShadow(
-                                              color: Colors.grey.shade500,
-                                              offset: const Offset(4.0, 4.0),
-                                              blurRadius: 23,
-                                              spreadRadius: 9),
-                                          const BoxShadow(
-                                              color: Colors.white,
-                                              offset: Offset(-5.0, -5.0),
-                                              blurRadius: 23,
-                                              spreadRadius: 9)
-                                        ],
-                                      ),
-                                      child: const Center(
-                                        child: Text(
-                                          "TEST PAPERS",
-                                          style: TextStyle(
-                                            fontSize: 21,
-                                            fontWeight: FontWeight.bold,
-                                          ),
+                            ),
+                            const SizedBox(
+                              width: 30,
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                GestureDetector(
+                                  child: Container(
+                                    height: 80,
+                                    width: 190,
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey.shade300,
+                                      borderRadius: BorderRadius.circular(9),
+                                      boxShadow: [
+                                        BoxShadow(
+                                            color: Colors.grey.shade500,
+                                            offset: const Offset(4.0, 4.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9),
+                                        const BoxShadow(
+                                            color: Colors.white,
+                                            offset: Offset(-5.0, -5.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9)
+                                      ],
+                                    ),
+                                    child: const Center(
+                                      child: Text(
+                                        " CHEMISTRY",
+                                        style: TextStyle(
+                                          fontSize: 21,
+                                          fontWeight: FontWeight.bold,
                                         ),
                                       ),
                                     ),
-                                  )
-                                ],
+                                  ),
+                                  onTap: () => Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => const CHEM()),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ],
+                        )
+                      ],
+                    ),
+                  ),
+
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 19.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      //mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            const SizedBox(
+                              width: 31,
+                            ),
+                            // ignore: sized_box_for_whitespace
+                            GestureDetector(
+                              child: Container(
+                                height: 100,
+                                padding: const EdgeInsets.all(0),
+                                decoration: BoxDecoration(
+                                  color: Colors.grey.shade300,
+                                  borderRadius: BorderRadius.circular(22),
+                                  boxShadow: [
+                                    BoxShadow(
+                                        color: Colors.grey.shade500,
+                                        offset: const Offset(4.0, 4.0),
+                                        blurRadius: 23,
+                                        spreadRadius: 9),
+                                    const BoxShadow(
+                                        color: Colors.white,
+                                        offset: Offset(-5.0, -5.0),
+                                        blurRadius: 23,
+                                        spreadRadius: 9)
+                                  ],
+                                ),
+                                child: Image.asset("assets/images/math.png"),
                               ),
-                            ],
-                          )
-                        ],
-                      ),
-                    )
-                  ]),
-                ),
+                              onTap: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const MATHS()),
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 30,
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                GestureDetector(
+                                  child: Container(
+                                    height: 80,
+                                    width: 190,
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey.shade300,
+                                      borderRadius: BorderRadius.circular(9),
+                                      boxShadow: [
+                                        BoxShadow(
+                                            color: Colors.grey.shade500,
+                                            offset: const Offset(4.0, 4.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9),
+                                        const BoxShadow(
+                                            color: Colors.white,
+                                            offset: Offset(-5.0, -5.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9)
+                                      ],
+                                    ),
+                                    child: const Center(
+                                      child: Text(
+                                        "MATHEMATICS",
+                                        style: TextStyle(
+                                          fontSize: 21,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  onTap: () => Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => const MATHS()),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ],
+                        )
+                      ],
+                    ),
+                  ),
+
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 19.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
+                      //mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            const SizedBox(
+                              width: 31,
+                            ),
+                            // ignore: sized_box_for_whitespace
+                            GestureDetector(
+                              child: Container(
+                                height: 100,
+                                padding: const EdgeInsets.all(12),
+                                decoration: BoxDecoration(
+                                  color: Colors.grey.shade300,
+                                  borderRadius: BorderRadius.circular(22),
+                                  boxShadow: [
+                                    BoxShadow(
+                                        color: Colors.grey.shade500,
+                                        offset: const Offset(4.0, 4.0),
+                                        blurRadius: 23,
+                                        spreadRadius: 9),
+                                    const BoxShadow(
+                                        color: Colors.white,
+                                        offset: Offset(-5.0, -5.0),
+                                        blurRadius: 23,
+                                        spreadRadius: 9)
+                                  ],
+                                ),
+                                child: Image.asset("assets/images/test.png"),
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 30,
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                GestureDetector(
+                                  child: Container(
+                                    height: 80,
+                                    width: 190,
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey.shade300,
+                                      borderRadius: BorderRadius.circular(9),
+                                      boxShadow: [
+                                        BoxShadow(
+                                            color: Colors.grey.shade500,
+                                            offset: const Offset(4.0, 4.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9),
+                                        const BoxShadow(
+                                            color: Colors.white,
+                                            offset: Offset(-5.0, -5.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9)
+                                      ],
+                                    ),
+                                    child: const Center(
+                                      child: Text(
+                                        "TEST PAPERS",
+                                        style: TextStyle(
+                                          fontSize: 21,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ],
+                        )
+                      ],
+                    ),
+                  )
+                ]),
               ),
-            ],
-          
-        ),
-     
-    bottomNavigationBar:  GNav(
-              backgroundColor: Colors.transparent,
-              rippleColor: const Color.fromARGB(
-                  255, 209, 185, 185), // tab button ripple color when pressed
-              hoverColor: const Color.fromARGB(
-                  255, 121, 117, 117), // tab button hover color
-              haptic: true, // haptic feedback
-              tabBorderRadius: 50,
-              //  tabActiveBorder: Border.all(color: const Color.fromARGB(255, 158, 150, 150), width: 1), // tab button border
-              //  tabBorder: Border.all(color: Colors.grey, width: 1), // tab button border
-              tabShadow: [
-                BoxShadow(color: Colors.grey.withOpacity(0.2), blurRadius: 8)
-              ], // tab button shadow
-              //curve: Curves.easeOutExpo, // tab animation curves
-              //duration: const Duration(milliseconds: 900), // tab animation duration
-      
-              color:
-                  const Color.fromARGB(255, 134, 134, 134), // unselected icon color
-              activeColor: const Color.fromARGB(
-                  255, 0, 0, 0), // selected icon and text color
-              iconSize: 24, // tab button icon size
-              tabBackgroundColor:
-                  const Color.fromARGB(255, 0, 0, 0).withOpacity(0.1),
-              style: GnavStyle.google, // selected tab background color
-              padding: const EdgeInsets.symmetric(
-                  horizontal: 20, vertical: 20), // navigation bar padding
-              gap: 8,
-              onTabChange: (index) {
-                if (index == 0) {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const MATHS()),
-                  );
-                  //print("object");
-                }
-                if (index == 1) {
-                  print("data");
-                }
-                if (index == 2) {
-                  print("idk");
-                } else {}
-                if (index == 3) {
-                  print("lol its 3");
-                }
-              },
-              tabs: const [
-                GButton(
-                  icon: Icons.home,
-                  iconActiveColor: Colors.blue,
-                  text: "Home",
-                ),
-                GButton(
-                  icon: Icons.book,
-                  iconActiveColor: Colors.green,
-                  text: "Notes",
-                ),
-                GButton(
-                  icon: Icons.quiz,
-                  text: "Test Papers",
-                  iconActiveColor: Colors.red,
-                ),
-                GButton(
-                  icon: Icons.settings,
-                  text: "Settings",
-                  iconActiveColor: Colors.black,
-                ),
-              ]
             ),
-      ),]
-    );
-  
+          ],
+        ),
 
+        bottomNavigationBar: GNav(
+            backgroundColor: Colors.transparent,
+            rippleColor: const Color.fromARGB(
+                255, 209, 185, 185), // tab button ripple color when pressed
+            hoverColor: const Color.fromARGB(
+                255, 121, 117, 117), // tab button hover color
+            haptic: true, // haptic feedback
+            tabBorderRadius: 50,
+            //  tabActiveBorder: Border.all(color: const Color.fromARGB(255, 158, 150, 150), width: 1), // tab button border
+            //  tabBorder: Border.all(color: Colors.grey, width: 1), // tab button border
+            tabShadow: [
+              BoxShadow(color: Colors.grey.withOpacity(0.2), blurRadius: 8)
+            ], // tab button shadow
+            //curve: Curves.easeOutExpo, // tab animation curves
+            //duration: const Duration(milliseconds: 900), // tab animation duration
 
+            color: const Color.fromARGB(
+                255, 134, 134, 134), // unselected icon color
+            activeColor: const Color.fromARGB(
+                255, 0, 0, 0), // selected icon and text color
+            iconSize: 24, // tab button icon size
+            tabBackgroundColor:
+                const Color.fromARGB(255, 0, 0, 0).withOpacity(0.1),
+            style: GnavStyle.google, // selected tab background color
+            padding: const EdgeInsets.symmetric(
+                horizontal: 20, vertical: 20), // navigation bar padding
+            gap: 8,
+            onTabChange: (index) {
+              if (index == 0) {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const MATHS()),
+                );
+                //print("object");
+              }
+              if (index == 1) {
+                print("data");
+              }
+              if (index == 2) {
+                print("idk");
+              } else {}
+              if (index == 3) {
+                print("lol its 3");
+              }
+            },
+            tabs: const [
+              GButton(
+                icon: Icons.home,
+                iconActiveColor: Colors.blue,
+                text: "Home",
+              ),
+              GButton(
+                icon: Icons.book,
+                iconActiveColor: Colors.green,
+                text: "Notes",
+              ),
+              GButton(
+                icon: Icons.quiz,
+                text: "Test Papers",
+                iconActiveColor: Colors.red,
+              ),
+              GButton(
+                icon: Icons.settings,
+                text: "Settings",
+                iconActiveColor: Colors.black,
+              ),
+            ]),
+      ),
+    ]);
 
-      // ],
-    
+    // ],
   }
 }
 

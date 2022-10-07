@@ -1,46 +1,40 @@
-//how to use inkell navigation?
-
-
-
-
-
-
 import 'package:flutter/material.dart';
-
-
 import 'package:flutter/services.dart';
-import 'package:science_buddy/home.dart';
+import 'package:science_buddy/home%20page/mobilebody.dart';
 
+import 'package:science_buddy/screens/onboard.dart';
 
+import 'package:shared_preferences/shared_preferences.dart';
 
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
 
+  final prefs = await SharedPreferences.getInstance();
+  final showHome = prefs.getBool("showHome") ?? false;
 
-
-void main() {
-   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations(
       [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
 
-  runApp(const MyApp());
+  runApp(MyApp(showHome: showHome));
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
+  final bool showHome;
+  const MyApp({
+    Key? key,
+    required this.showHome,
+  }) : super(key: key);
   @override
   Widget build(BuildContext context) {
- 
-    return  MaterialApp(
-      
-      
+    return MaterialApp(
       title: "science buddy",
-       
-      home:  const HOME(),
-
-      theme: ThemeData(useMaterial3: true,
-      appBarTheme:   AppBarTheme(backgroundColor: Colors.grey.shade300,)), 
+      home: showHome ? MOB() : const ONBOARDSCREEN(),
+      theme: ThemeData(
+          useMaterial3: true,
+          appBarTheme: AppBarTheme(
+            backgroundColor: Colors.grey.shade300,
+          )),
       debugShowCheckedModeBanner: false,
-     
     );
   }
 }

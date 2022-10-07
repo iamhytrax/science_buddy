@@ -33,7 +33,8 @@ class MOB extends StatelessWidget {
               ),
               actions: [
                 IconButton(
-                    onPressed: () {},
+                    onPressed: () {}, 
+                    
                     icon: const Icon(
                       Icons.star_outline_sharp,
                       size: 30,

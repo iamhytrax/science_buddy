@@ -9,7 +9,7 @@ class MATHS extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.cyan.shade300,
+      backgroundColor: Colors.grey.shade300,
       body: CustomScrollView(
         slivers: [
           SliverAppBar.large(
@@ -22,7 +22,7 @@ class MATHS extends StatelessWidget {
            //        size: 30,
            //      ))
            //], 
-            backgroundColor: Colors.cyan.shade300,  
+            backgroundColor: Colors.grey.shade300,  
             title: const Center(
               child: Text(
                 "MATHEMATICS",
@@ -67,17 +67,17 @@ class MATHS extends StatelessWidget {
                                     height: 70,
                                     width: 270,
                                     decoration: BoxDecoration( 
-                                      color: Colors.cyan.shade300,
+                                      color: Colors.grey.shade300,
                                       borderRadius: BorderRadius.circular(9),
-                                      boxShadow: const  [
+                                      boxShadow:   [
                                          BoxShadow(
-                                            color: Color.fromARGB(255, 0, 159, 180),  
-                                            offset:  Offset(5.0, 5.0), 
+                                            color:Colors.grey.shade300,
+                                            offset:  const Offset(5.0, 5.0), 
                                             blurRadius: 23,
                                             spreadRadius: 9),
-                                         BoxShadow(
-                                            color: Color.fromARGB(255, 131, 233, 247),
-                                            offset:  Offset(-5.0, -5.0),
+                                          BoxShadow(
+                                            color: Colors.grey.shade600,
+                                            offset:  const Offset(-5.0, -5.0),
                                             blurRadius: 23,
                                             spreadRadius: 9)
                                       ],
@@ -109,6 +109,9 @@ class MATHS extends StatelessWidget {
 
                   ),
                   
+
+                  
+                  
                     const SizedBox(
                     height: 35 ,
                   ),
@@ -136,17 +139,17 @@ class MATHS extends StatelessWidget {
                                     height: 70,
                                     width: 270,
                                     decoration: BoxDecoration( 
-                                      color: Colors.cyan.shade300,
+                                      color: Colors.grey.shade300,
                                       borderRadius: BorderRadius.circular(9),
-                                      boxShadow: const  [
+                                      boxShadow:   [
                                          BoxShadow(
-                                            color: Color.fromARGB(255, 0, 159, 180),  
-                                            offset:  Offset(5.0, 5.0), 
+                                            color:Colors.grey.shade300,
+                                            offset:  const Offset(5.0, 5.0), 
                                             blurRadius: 23,
                                             spreadRadius: 9),
-                                         BoxShadow(
-                                            color: Color.fromARGB(255, 131, 233, 247),
-                                            offset:  Offset(-5.0, -5.0),
+                                          BoxShadow(
+                                            color: Colors.grey.shade600,
+                                            offset:  const Offset(-5.0, -5.0),
                                             blurRadius: 23,
                                             spreadRadius: 9)
                                       ],
@@ -175,429 +178,507 @@ class MATHS extends StatelessWidget {
                         )
                       ],
                     ),
-                    
-                  ),
- 
-                    const SizedBox(
-                    height: 35 ,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 15,
-                            ),
-                            // ignore: sized_box_for_whitespace
 
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                GestureDetector(
-                                  child: Container(
-                                    height: 70,
-                                    width: 270,
-                                    decoration: BoxDecoration( 
-                                      color: Colors.cyan.shade300,
-                                      borderRadius: BorderRadius.circular(9),
-                                      boxShadow: const  [
-                                         BoxShadow(
-                                            color: Color.fromARGB(255, 0, 159, 180),  
-                                            offset:  Offset(5.0, 5.0), 
-                                            blurRadius: 23,
-                                            spreadRadius: 9),
-                                         BoxShadow(
-                                            color: Color.fromARGB(255, 131, 233, 247),
-                                            offset:  Offset(-5.0, -5.0),
-                                            blurRadius: 23,
-                                            spreadRadius: 9)
-                                      ],
-                                    ),
-                                    child: Row(
-                                      children: const [
-                                        Center(
-                                          child: Text(
-                                            "      MATHEMATICS", 
-                                            style: TextStyle(
-                                                fontSize: 21,
-                                                fontWeight: FontWeight.bold),
-                                          ),
-                                        ),
-                                        SizedBox(
-                                          width: 32,
-                                        ),
-                                        Icon(Icons.keyboard_arrow_right),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                    
-                  ),
- 
-                    const SizedBox(
-                    height: 35 ,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 15,
-                            ),
-                            // ignore: sized_box_for_whitespace
-
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                GestureDetector(
-                                  child: Container(
-                                    height: 70,
-                                    width: 270,
-                                    decoration: BoxDecoration( 
-                                      color: Colors.cyan.shade300,
-                                      borderRadius: BorderRadius.circular(9),
-                                      boxShadow: const  [
-                                         BoxShadow(
-                                            color: Color.fromARGB(255, 0, 159, 180),  
-                                            offset:  Offset(5.0, 5.0), 
-                                            blurRadius: 23,
-                                            spreadRadius: 9),
-                                         BoxShadow(
-                                            color: Color.fromARGB(255, 131, 233, 247),
-                                            offset:  Offset(-5.0, -5.0),
-                                            blurRadius: 23,
-                                            spreadRadius: 9)
-                                      ],
-                                    ),
-                                    child: Row(
-                                      children: const [
-                                        Center(
-                                          child: Text(
-                                            "      MATHEMATICS", 
-                                            style: TextStyle(
-                                                fontSize: 21,
-                                                fontWeight: FontWeight.bold),
-                                          ),
-                                        ),
-                                        SizedBox(
-                                          width: 32,
-                                        ),
-                                        Icon(Icons.keyboard_arrow_right),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                    
-                  ),
- 
-                    const SizedBox(
-                    height: 35 ,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 15,
-                            ),
-                            // ignore: sized_box_for_whitespace
-
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                GestureDetector(
-                                  child: Container(
-                                    height: 70,
-                                    width: 270,
-                                    decoration: BoxDecoration( 
-                                      color: Colors.cyan.shade300,
-                                      borderRadius: BorderRadius.circular(9),
-                                      boxShadow: const  [
-                                         BoxShadow(
-                                            color: Color.fromARGB(255, 0, 159, 180),  
-                                            offset:  Offset(5.0, 5.0), 
-                                            blurRadius: 23,
-                                            spreadRadius: 9),
-                                         BoxShadow(
-                                            color: Color.fromARGB(255, 131, 233, 247),
-                                            offset:  Offset(-5.0, -5.0),
-                                            blurRadius: 23,
-                                            spreadRadius: 9)
-                                      ],
-                                    ),
-                                    child: Row(
-                                      children: const [
-                                        Center(
-                                          child: Text(
-                                            "      MATHEMATICS", 
-                                            style: TextStyle(
-                                                fontSize: 21,
-                                                fontWeight: FontWeight.bold),
-                                          ),
-                                        ),
-                                        SizedBox(
-                                          width: 32,
-                                        ),
-                                        Icon(Icons.keyboard_arrow_right),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                    
-                  ),
- 
-                    const SizedBox(
-                    height: 35 ,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 15,
-                            ),
-                            // ignore: sized_box_for_whitespace
-
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                GestureDetector(
-                                  child: Container(
-                                    height: 70,
-                                    width: 270,
-                                    decoration: BoxDecoration( 
-                                      color: Colors.cyan.shade300,
-                                      borderRadius: BorderRadius.circular(9),
-                                      boxShadow: const  [
-                                         BoxShadow(
-                                            color: Color.fromARGB(255, 0, 159, 180),  
-                                            offset:  Offset(5.0, 5.0), 
-                                            blurRadius: 23,
-                                            spreadRadius: 9),
-                                         BoxShadow(
-                                            color: Color.fromARGB(255, 131, 233, 247),
-                                            offset:  Offset(-5.0, -5.0),
-                                            blurRadius: 23,
-                                            spreadRadius: 9)
-                                      ],
-                                    ),
-                                    child: Row(
-                                      children: const [
-                                        Center(
-                                          child: Text(
-                                            "      MATHEMATICS", 
-                                            style: TextStyle(
-                                                fontSize: 21,
-                                                fontWeight: FontWeight.bold),
-                                          ),
-                                        ),
-                                        SizedBox(
-                                          width: 32,
-                                        ),
-                                        Icon(Icons.keyboard_arrow_right),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                    
-                  ),
- 
-                    const SizedBox(
-                    height: 35 ,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 15,
-                            ),
-                            // ignore: sized_box_for_whitespace
-
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                GestureDetector(
-                                  child: Container(
-                                    height: 70,
-                                    width: 270,
-                                    decoration: BoxDecoration( 
-                                      color: Colors.cyan.shade300,
-                                      borderRadius: BorderRadius.circular(9),
-                                      boxShadow: const  [
-                                         BoxShadow(
-                                            color: Color.fromARGB(255, 0, 159, 180),  
-                                            offset:  Offset(5.0, 5.0), 
-                                            blurRadius: 23,
-                                            spreadRadius: 9),
-                                         BoxShadow(
-                                            color: Color.fromARGB(255, 131, 233, 247),
-                                            offset:  Offset(-5.0, -5.0),
-                                            blurRadius: 23,
-                                            spreadRadius: 9)
-                                      ],
-                                    ),
-                                    child: Row(
-                                      children: const [
-                                        Center(
-                                          child: Text(
-                                            "      MATHEMATICS", 
-                                            style: TextStyle(
-                                                fontSize: 21,
-                                                fontWeight: FontWeight.bold),
-                                          ),
-                                        ),
-                                        SizedBox(
-                                          width: 32,
-                                        ),
-                                        Icon(Icons.keyboard_arrow_right),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                    
-                  ),
- 
-                    const SizedBox(
-                    height: 35 ,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 15,
-                            ),
-                            // ignore: sized_box_for_whitespace
-
-                            const SizedBox(
-                              width: 41,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                GestureDetector(
-                                  child: Container(
-                                    height: 70,
-                                    width: 270,
-                                    decoration: BoxDecoration( 
-                                      color: Colors.cyan.shade300,
-                                      borderRadius: BorderRadius.circular(9),
-                                      boxShadow: const  [
-                                         BoxShadow(
-                                            color: Color.fromARGB(255, 0, 159, 180),  
-                                            offset:  Offset(5.0, 5.0), 
-                                            blurRadius: 23,
-                                            spreadRadius: 9),
-                                         BoxShadow(
-                                            color: Color.fromARGB(255, 131, 233, 247),
-                                            offset:  Offset(-5.0, -5.0),
-                                            blurRadius: 23,
-                                            spreadRadius: 9)
-                                      ],
-                                    ),
-                                    child: Row(
-                                      children: const [
-                                        Center(
-                                          child: Text(
-                                            "      MATHEMATICS", 
-                                            style: TextStyle(
-                                                fontSize: 21,
-                                                fontWeight: FontWeight.bold),
-                                          ),
-                                        ),
-                                        SizedBox(
-                                          width: 32,
-                                        ),
-                                        Icon(Icons.keyboard_arrow_right),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                    
-                  ),
- 
-                    const SizedBox(
-                    height: 35 ,
                   ),
                   
 
                   
+                    const SizedBox(
+                    height: 35 ,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 19.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            const SizedBox(
+                              width: 15,
+                            ),
+                            // ignore: sized_box_for_whitespace
+
+                            const SizedBox(
+                              width: 41,
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                GestureDetector(
+                                  child: Container(
+                                    height: 70,
+                                    width: 270,
+                                    decoration: BoxDecoration( 
+                                      color: Colors.grey.shade300,
+                                      borderRadius: BorderRadius.circular(9),
+                                      boxShadow:   [
+                                         BoxShadow(
+                                            color:Colors.grey.shade300,
+                                            offset:  const Offset(5.0, 5.0), 
+                                            blurRadius: 23,
+                                            spreadRadius: 9),
+                                          BoxShadow(
+                                            color: Colors.grey.shade600,
+                                            offset:  const Offset(-5.0, -5.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9)
+                                      ],
+                                    ),
+                                    child: Row(
+                                      children: const [
+                                        Center(
+                                          child: Text(
+                                            "      MATHEMATICS", 
+                                            style: TextStyle(
+                                                fontSize: 21,
+                                                fontWeight: FontWeight.bold),
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          width: 32,
+                                        ),
+                                        Icon(Icons.keyboard_arrow_right),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        )
+                      ],
+                    ),
+
+                  ),
+                  
+
+                  
+                    const SizedBox(
+                    height: 35 ,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 19.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            const SizedBox(
+                              width: 15,
+                            ),
+                            // ignore: sized_box_for_whitespace
+
+                            const SizedBox(
+                              width: 41,
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                GestureDetector(
+                                  child: Container(
+                                    height: 70,
+                                    width: 270,
+                                    decoration: BoxDecoration( 
+                                      color: Colors.grey.shade300,
+                                      borderRadius: BorderRadius.circular(9),
+                                      boxShadow:   [
+                                         BoxShadow(
+                                            color:Colors.grey.shade300,
+                                            offset:  const Offset(5.0, 5.0), 
+                                            blurRadius: 23,
+                                            spreadRadius: 9),
+                                          BoxShadow(
+                                            color: Colors.grey.shade600,
+                                            offset:  const Offset(-5.0, -5.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9)
+                                      ],
+                                    ),
+                                    child: Row(
+                                      children: const [
+                                        Center(
+                                          child: Text(
+                                            "      MATHEMATICS", 
+                                            style: TextStyle(
+                                                fontSize: 21,
+                                                fontWeight: FontWeight.bold),
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          width: 32,
+                                        ),
+                                        Icon(Icons.keyboard_arrow_right),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        )
+                      ],
+                    ),
+
+                  ),
+                  
+
+                  
+                    const SizedBox(
+                    height: 35 ,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 19.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            const SizedBox(
+                              width: 15,
+                            ),
+                            // ignore: sized_box_for_whitespace
+
+                            const SizedBox(
+                              width: 41,
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                GestureDetector(
+                                  child: Container(
+                                    height: 70,
+                                    width: 270,
+                                    decoration: BoxDecoration( 
+                                      color: Colors.grey.shade300,
+                                      borderRadius: BorderRadius.circular(9),
+                                      boxShadow:   [
+                                         BoxShadow(
+                                            color:Colors.grey.shade300,
+                                            offset:  const Offset(5.0, 5.0), 
+                                            blurRadius: 23,
+                                            spreadRadius: 9),
+                                          BoxShadow(
+                                            color: Colors.grey.shade600,
+                                            offset:  const Offset(-5.0, -5.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9)
+                                      ],
+                                    ),
+                                    child: Row(
+                                      children: const [
+                                        Center(
+                                          child: Text(
+                                            "      MATHEMATICS", 
+                                            style: TextStyle(
+                                                fontSize: 21,
+                                                fontWeight: FontWeight.bold),
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          width: 32,
+                                        ),
+                                        Icon(Icons.keyboard_arrow_right),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        )
+                      ],
+                    ),
+
+                  ),
+                  
+
+                  
+                    const SizedBox(
+                    height: 35 ,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 19.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            const SizedBox(
+                              width: 15,
+                            ),
+                            // ignore: sized_box_for_whitespace
+
+                            const SizedBox(
+                              width: 41,
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                GestureDetector(
+                                  child: Container(
+                                    height: 70,
+                                    width: 270,
+                                    decoration: BoxDecoration( 
+                                      color: Colors.grey.shade300,
+                                      borderRadius: BorderRadius.circular(9),
+                                      boxShadow:   [
+                                         BoxShadow(
+                                            color:Colors.grey.shade300,
+                                            offset:  const Offset(5.0, 5.0), 
+                                            blurRadius: 23,
+                                            spreadRadius: 9),
+                                          BoxShadow(
+                                            color: Colors.grey.shade600,
+                                            offset:  const Offset(-5.0, -5.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9)
+                                      ],
+                                    ),
+                                    child: Row(
+                                      children: const [
+                                        Center(
+                                          child: Text(
+                                            "      MATHEMATICS", 
+                                            style: TextStyle(
+                                                fontSize: 21,
+                                                fontWeight: FontWeight.bold),
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          width: 32,
+                                        ),
+                                        Icon(Icons.keyboard_arrow_right),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        )
+                      ],
+                    ),
+
+                  ),
+                  
+
+                  
+                    const SizedBox(
+                    height: 35 ,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 19.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            const SizedBox(
+                              width: 15,
+                            ),
+                            // ignore: sized_box_for_whitespace
+
+                            const SizedBox(
+                              width: 41,
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                GestureDetector(
+                                  child: Container(
+                                    height: 70,
+                                    width: 270,
+                                    decoration: BoxDecoration( 
+                                      color: Colors.grey.shade300,
+                                      borderRadius: BorderRadius.circular(9),
+                                      boxShadow:   [
+                                         BoxShadow(
+                                            color:Colors.grey.shade300,
+                                            offset:  const Offset(5.0, 5.0), 
+                                            blurRadius: 23,
+                                            spreadRadius: 9),
+                                          BoxShadow(
+                                            color: Colors.grey.shade600,
+                                            offset:  const Offset(-5.0, -5.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9)
+                                      ],
+                                    ),
+                                    child: Row(
+                                      children: const [
+                                        Center(
+                                          child: Text(
+                                            "      MATHEMATICS", 
+                                            style: TextStyle(
+                                                fontSize: 21,
+                                                fontWeight: FontWeight.bold),
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          width: 32,
+                                        ),
+                                        Icon(Icons.keyboard_arrow_right),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        )
+                      ],
+                    ),
+
+                  ),
+                  
+
+                  
+                    const SizedBox(
+                    height: 35 ,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 19.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            const SizedBox(
+                              width: 15,
+                            ),
+                            // ignore: sized_box_for_whitespace
+
+                            const SizedBox(
+                              width: 41,
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                GestureDetector(
+                                  child: Container(
+                                    height: 70,
+                                    width: 270,
+                                    decoration: BoxDecoration( 
+                                      color: Colors.grey.shade300,
+                                      borderRadius: BorderRadius.circular(9),
+                                      boxShadow:   [
+                                         BoxShadow(
+                                            color:Colors.grey.shade300,
+                                            offset:  const Offset(5.0, 5.0), 
+                                            blurRadius: 23,
+                                            spreadRadius: 9),
+                                          BoxShadow(
+                                            color: Colors.grey.shade600,
+                                            offset:  const Offset(-5.0, -5.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9)
+                                      ],
+                                    ),
+                                    child: Row(
+                                      children: const [
+                                        Center(
+                                          child: Text(
+                                            "      MATHEMATICS", 
+                                            style: TextStyle(
+                                                fontSize: 21,
+                                                fontWeight: FontWeight.bold),
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          width: 32,
+                                        ),
+                                        Icon(Icons.keyboard_arrow_right),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        )
+                      ],
+                    ),
+
+                  ),
+                  
+
+                  
+                    const SizedBox(
+                    height: 35 ,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 19.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            const SizedBox(
+                              width: 15,
+                            ),
+                            // ignore: sized_box_for_whitespace
+
+                            const SizedBox(
+                              width: 41,
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                GestureDetector(
+                                  child: Container(
+                                    height: 70,
+                                    width: 270,
+                                    decoration: BoxDecoration( 
+                                      color: Colors.grey.shade300,
+                                      borderRadius: BorderRadius.circular(9),
+                                      boxShadow:   [
+                                         BoxShadow(
+                                            color:Colors.grey.shade300,
+                                            offset:  const Offset(5.0, 5.0), 
+                                            blurRadius: 23,
+                                            spreadRadius: 9),
+                                          BoxShadow(
+                                            color: Colors.grey.shade600,
+                                            offset:  const Offset(-5.0, -5.0),
+                                            blurRadius: 23,
+                                            spreadRadius: 9)
+                                      ],
+                                    ),
+                                    child: Row(
+                                      children: const [
+                                        Center(
+                                          child: Text(
+                                            "      MATHEMATICS", 
+                                            style: TextStyle(
+                                                fontSize: 21,
+                                                fontWeight: FontWeight.bold),
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          width: 32,
+                                        ),
+                                        Icon(Icons.keyboard_arrow_right),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        )
+                      ],
+                    ),
+
+                  ),
+                  
+
                   
 
 

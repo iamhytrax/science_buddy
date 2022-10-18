@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:science_buddy/home%20page/mobilebody.dart';
+import 'package:science_buddy/screens/brainmap.dart';
 
 import 'package:science_buddy/screens/onboard.dart';
 
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "science buddy",
-      home: showHome ? MOB() : const ONBOARDSCREEN(),
+      home: showHome ? const PlayMaterial(): const ONBOARDSCREEN(),
       theme: ThemeData(
           useMaterial3: true,
           appBarTheme: AppBarTheme(

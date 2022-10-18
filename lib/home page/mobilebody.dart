@@ -1,15 +1,35 @@
+import 'package:clay_containers/widgets/clay_container.dart';
 import 'package:flutter/material.dart';
+
+import 'package:science_buddy/home%20page/pdf/pdf1.dart';
 import 'package:science_buddy/sub/chem.dart';
 import 'package:science_buddy/sub/maths.dart';
-import 'package:science_buddy/home%20page/pdf/pdf.dart';
-import 'package:science_buddy/home%20page/pdf/pdf1.dart';
+
 import 'package:science_buddy/sub/phy.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-class MOB extends StatelessWidget {
-  MOB({super.key});
+
+class MOB extends StatefulWidget {
+  const MOB({super.key});
+
+  @override
+  State<MOB> createState() => _MOBState();
+}
+
+class _MOBState extends State<MOB> {
   final List<Widget> pages = [const PHY(), const CHEM(), const MATHS()];
+
   final _controller = PageController();
+
+  int index = 0;
+
+  // ignore: non_constant_identifier_names
+  final Screens = [
+    const MOB(),
+    const PHY(),
+    const CHEM(),
+    const MATHS(),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -33,8 +53,7 @@ class MOB extends StatelessWidget {
               ),
               actions: [
                 IconButton(
-                    onPressed: () {}, 
-                    
+                    onPressed: () {},
                     icon: const Icon(
                       Icons.star_outline_sharp,
                       size: 30,
@@ -310,7 +329,7 @@ class MOB extends StatelessWidget {
                           onTap: () => Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const HomePage()),
+                                builder: (context) => const PDF2()),
                           ),
                         ),
                         const SizedBox(height: 2),
@@ -336,7 +355,8 @@ class MOB extends StatelessWidget {
                               ],
                             ), // BoxDecoration
                             child: Center(
-                              child: Image.asset("assets/images/notes1.png"),
+                              child: Image.asset("assets/images/notes1.png",
+                                  fit: BoxFit.cover),
                             ),
                           ),
                           onTap: () => Navigator.push(
@@ -375,34 +395,25 @@ class MOB extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(bottom: 19.0),
                     child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly, 
                       children: [
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            const SizedBox(
-                              width: 31,
-                            ),
+                            
                             GestureDetector(
-                              child: Container(
-                                height: 100,
-                                padding: const EdgeInsets.all(0),
-                                decoration: BoxDecoration(
-                                  color: Colors.grey.shade300,
-                                  borderRadius: BorderRadius.circular(22),
-                                  boxShadow: [
-                                    BoxShadow(
-                                        color: Colors.grey.shade500,
-                                        offset: const Offset(4.0, 4.0),
-                                        blurRadius: 23,
-                                        spreadRadius: 9),
-                                    const BoxShadow(
-                                        color: Colors.white,
-                                        offset: Offset(-5.0, -5.0),
-                                        blurRadius: 23,
-                                        spreadRadius: 9)
-                                  ],
+                              child: ClayContainer(
+                                color: Colors.grey.shade300,
+                                height: 80,
+                                width: 80,
+                                borderRadius: 30,
+                                depth: 15,
+                                spread: 6,
+                                child: Center(
+                                  child: Image.asset(
+                                      "assets/images/physics.png", 
+                                      scale: 1),
                                 ),
-                                child: Image.asset("assets/images/physics.png"),
                               ),
                               onTap: () => Navigator.push(
                                 context,
@@ -411,37 +422,25 @@ class MOB extends StatelessWidget {
                               ),
                             ),
                             const SizedBox(
-                              width: 30,
+                              width: 40,
                             ),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 GestureDetector(
-                                  child: Container(
-                                    height: 80,
-                                    width: 190,
-                                    decoration: BoxDecoration(
-                                      color: Colors.grey.shade300,
-                                      borderRadius: BorderRadius.circular(9),
-                                      boxShadow: [
-                                        BoxShadow(
-                                            color: Colors.grey.shade500,
-                                            offset: const Offset(4.0, 4.0),
-                                            blurRadius: 23,
-                                            spreadRadius: 9),
-                                        const BoxShadow(
-                                            color: Colors.white,
-                                            offset: Offset(-5.0, -5.0),
-                                            blurRadius: 23,
-                                            spreadRadius: 9)
-                                      ],
-                                    ),
+                                  child: ClayContainer(
+                                    color: Colors.grey.shade300,
+                                    height: 70,
+                                    width: 200,
+                                    borderRadius: 39,
+                                    depth: 15,
+                                    spread: 6,
                                     child: const Center(
                                       child: Text(
-                                        "PHYSICS",
+                                        'PHYSICS',
                                         style: TextStyle(
-                                            fontSize: 21,
-                                            fontWeight: FontWeight.bold),
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 25),
                                       ),
                                     ),
                                   ),
@@ -462,34 +461,24 @@ class MOB extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(bottom: 19.0),
                     child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            const SizedBox(
-                              width: 31,
-                            ),
+                           
                             GestureDetector(
-                              child: Container(
-                                height: 100,
-                                padding: const EdgeInsets.all(12),
-                                decoration: BoxDecoration(
-                                  color: Colors.grey.shade300,
-                                  borderRadius: BorderRadius.circular(22),
-                                  boxShadow: [
-                                    BoxShadow(
-                                        color: Colors.grey.shade500,
-                                        offset: const Offset(4.0, 4.0),
-                                        blurRadius: 23,
-                                        spreadRadius: 9),
-                                    const BoxShadow(
-                                        color: Colors.white,
-                                        offset: Offset(-5.0, -5.0),
-                                        blurRadius: 23,
-                                        spreadRadius: 9)
-                                  ],
+                              child: ClayContainer(
+                                color: Colors.grey.shade300,
+                                height: 80,
+                                width: 80,
+                                borderRadius: 30,
+                                depth: 15,
+                                spread: 6,
+                                child: Center(
+                                  child: Image.asset("assets/images/chem.png",
+                                      scale: 10),
                                 ),
-                                child: Image.asset("assets/images/chem.png"),
                               ),
                               onTap: () => Navigator.push(
                                 context,
@@ -498,38 +487,25 @@ class MOB extends StatelessWidget {
                               ),
                             ),
                             const SizedBox(
-                              width: 30,
+                              width: 40,
                             ),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 GestureDetector(
-                                  child: Container(
-                                    height: 80,
-                                    width: 190,
-                                    decoration: BoxDecoration(
-                                      color: Colors.grey.shade300,
-                                      borderRadius: BorderRadius.circular(9),
-                                      boxShadow: [
-                                        BoxShadow(
-                                            color: Colors.grey.shade500,
-                                            offset: const Offset(4.0, 4.0),
-                                            blurRadius: 23,
-                                            spreadRadius: 9),
-                                        const BoxShadow(
-                                            color: Colors.white,
-                                            offset: Offset(-5.0, -5.0),
-                                            blurRadius: 23,
-                                            spreadRadius: 9)
-                                      ],
-                                    ),
+                                  child: ClayContainer(
+                                    color: Colors.grey.shade300,
+                                    height: 70,
+                                    width: 200,
+                                    borderRadius: 39,
+                                    depth: 15,
+                                    spread: 6,
                                     child: const Center(
                                       child: Text(
-                                        " CHEMISTRY",
+                                        'CHEMISTEY',
                                         style: TextStyle(
-                                          fontSize: 21,
-                                          fontWeight: FontWeight.bold,
-                                        ),
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 25),
                                       ),
                                     ),
                                   ),
@@ -550,35 +526,25 @@ class MOB extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(bottom: 19.0),
                     child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       //mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Row(
+                        Row( mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                         
                           children: [
-                            const SizedBox(
-                              width: 31,
-                            ),
+                           
                             GestureDetector(
-                              child: Container(
-                                height: 100,
-                                padding: const EdgeInsets.all(0),
-                                decoration: BoxDecoration(
-                                  color: Colors.grey.shade300,
-                                  borderRadius: BorderRadius.circular(22),
-                                  boxShadow: [
-                                    BoxShadow(
-                                        color: Colors.grey.shade500,
-                                        offset: const Offset(4.0, 4.0),
-                                        blurRadius: 23,
-                                        spreadRadius: 9),
-                                    const BoxShadow(
-                                        color: Colors.white,
-                                        offset: Offset(-5.0, -5.0),
-                                        blurRadius: 23,
-                                        spreadRadius: 9)
-                                  ],
+                              child: ClayContainer(
+                                color: Colors.grey.shade300,
+                                height: 80,
+                                width: 80,
+                                borderRadius: 30,
+                                depth: 15,
+                                spread: 6,
+                                child: Center(
+                                  child: Image.asset("assets/images/math.png",
+                                      scale: 1),
                                 ),
-                                child: Image.asset("assets/images/math.png"),
                               ),
                               onTap: () => Navigator.push(
                                 context,
@@ -587,38 +553,25 @@ class MOB extends StatelessWidget {
                               ),
                             ),
                             const SizedBox(
-                              width: 30,
+                              width: 40,
                             ),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 GestureDetector(
-                                  child: Container(
-                                    height: 80,
-                                    width: 190,
-                                    decoration: BoxDecoration(
-                                      color: Colors.grey.shade300,
-                                      borderRadius: BorderRadius.circular(9),
-                                      boxShadow: [
-                                        BoxShadow(
-                                            color: Colors.grey.shade500,
-                                            offset: const Offset(4.0, 4.0),
-                                            blurRadius: 23,
-                                            spreadRadius: 9),
-                                        const BoxShadow(
-                                            color: Colors.white,
-                                            offset: Offset(-5.0, -5.0),
-                                            blurRadius: 23,
-                                            spreadRadius: 9)
-                                      ],
-                                    ),
+                                  child: ClayContainer(
+                                    color: Colors.grey.shade300,
+                                    height: 70,
+                                    width: 200,
+                                    borderRadius: 39,
+                                    depth: 15,
+                                    spread: 6,
                                     child: const Center(
                                       child: Text(
-                                        "MATHEMATICS",
+                                        'MATHEMATICS',
                                         style: TextStyle(
-                                          fontSize: 21,
-                                          fontWeight: FontWeight.bold,
-                                        ),
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 25),
                                       ),
                                     ),
                                   ),
@@ -638,70 +591,46 @@ class MOB extends StatelessWidget {
 
                   Padding(
                     padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                     
                       children: [
                         Row(
-                          children: [
-                            const SizedBox(
-                              width: 31,
-                            ),
+                          children: [ 
+                           
                             GestureDetector(
-                              child: Container(
-                                height: 100,
-                                padding: const EdgeInsets.all(12),
-                                decoration: BoxDecoration(
-                                  color: Colors.grey.shade300,
-                                  borderRadius: BorderRadius.circular(22),
-                                  boxShadow: [
-                                    BoxShadow(
-                                        color: Colors.grey.shade500,
-                                        offset: const Offset(4.0, 4.0),
-                                        blurRadius: 23,
-                                        spreadRadius: 9),
-                                    const BoxShadow(
-                                        color: Colors.white,
-                                        offset: Offset(-5.0, -5.0),
-                                        blurRadius: 23,
-                                        spreadRadius: 9),
-                                  ],
+                              child: ClayContainer(
+                                color: Colors.grey.shade300,
+                                height: 80,
+                                width: 80,
+                                borderRadius: 30,
+                                depth: 15,
+                                spread: 6,
+                                child: Center(
+                                  child: Image.asset("assets/images/test.png",
+                                      scale: 4),
                                 ),
-                                child: Image.asset("assets/images/test.png"),
                               ),
                             ),
                             const SizedBox(
-                              width: 30,
+                              width: 40,
                             ),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 GestureDetector(
-                                  child: Container(
-                                    height: 80,
-                                    width: 190,
-                                    decoration: BoxDecoration(
-                                      color: Colors.grey.shade300,
-                                      borderRadius: BorderRadius.circular(9),
-                                      boxShadow: [
-                                        BoxShadow(
-                                            color: Colors.grey.shade500,
-                                            offset: const Offset(4.0, 4.0),
-                                            blurRadius: 23,
-                                            spreadRadius: 9),
-                                        const BoxShadow(
-                                            color: Colors.white,
-                                            offset: Offset(-5.0, -5.0),
-                                            blurRadius: 23,
-                                            spreadRadius: 9)
-                                      ],
-                                    ),
+                                  child: ClayContainer(
+                                    color: Colors.grey.shade300,
+                                    height: 70,
+                                    width: 200,
+                                    borderRadius: 39,
+                                    depth: 15,
+                                    spread: 6,
                                     child: const Center(
                                       child: Text(
-                                        "TEST PAPERS",
+                                        'TEST PAPERS',
                                         style: TextStyle(
-                                          fontSize: 21,
-                                          fontWeight: FontWeight.bold,
-                                        ),
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 25),
                                       ),
                                     ),
                                   ),
@@ -718,7 +647,86 @@ class MOB extends StatelessWidget {
             ),
           ],
         ),
-        // bottomNavigationBar:  const GNAV(),
+
+        //bottomNavigationBar: NavigationBarTheme(
+        //  data: NavigationBarThemeData(
+        //      indicatorColor: Colors.amber,
+        //      labelTextStyle: MaterialStateProperty.all(
+        //          const TextStyle(fontSize: 14, fontWeight: FontWeight.bold))),
+        //  child: NavigationBar(
+        //    labelBehavior: NavigationDestinationLabelBehavior.onlyShowSelected,
+        //    height: 60,
+        //    backgroundColor: const Color(0xFFf1f5fb),
+        //    selectedIndex: index,
+        //    onDestinationSelected: (index) =>
+        //        setState(() => this.index = index),
+        //    destinations: const [
+        //      NavigationDestination(
+        //          icon: Icon(Icons.mail_lock_outlined), label: "mail"),
+        //      NavigationDestination(
+        //          icon: Icon(Icons.book_online_outlined), label: "book"),
+        //      NavigationDestination(
+        //          icon: Icon(Icons.ac_unit_outlined), label: "maadsdfddl"),
+        //      NavigationDestination(
+        //          icon: Icon(Icons.square_foot), label: "mawd"),
+        //    ],
+        //  ),
+        //)
+
+        //bottomNavigationBar: GNav(
+        //  backgroundColor: Colors.transparent,
+        //  rippleColor: const Color.fromARGB(
+        //      255, 209, 185, 185), // tab button ripple color when pressed
+        //  hoverColor: const Color.fromARGB(
+        //      255, 121, 117, 117), // tab button hover color
+        //  haptic: true, // haptic feedback
+        //  tabBorderRadius: 50,
+        //  //  tabActiveBorder: Border.all(color: const Color.fromARGB(255, 158, 150, 150), width: 1), // tab button border
+        //  //  tabBorder: Border.all(color: Colors.grey, width: 1), // tab button border
+        //  tabShadow: [
+        //    BoxShadow(color: Colors.grey.withOpacity(0.2), blurRadius: 8)
+        //  ], // tab button shadow
+        //  //curve: Curves.easeOutExpo, // tab animation curves
+        //  //duration: const Duration(milliseconds: 900), // tab animation duration
+//
+        //  color:
+        //      const Color.fromARGB(255, 134, 134, 134), // unselected icon color
+        //  activeColor: const Color.fromARGB(
+        //      255, 0, 0, 0), // selected icon and text color
+        //  iconSize: 24, // tab button icon size
+        //  tabBackgroundColor:
+        //      const Color.fromARGB(255, 0, 0, 0).withOpacity(0.1),
+        //  style: GnavStyle.google, // selected tab background color
+        //  padding: const EdgeInsets.symmetric(
+        //      horizontal: 20, vertical: 20), // navigation bar padding
+        //  gap: 8,
+        //  onTabChange: (index) => setState(() => this.index = index),
+//
+        //  //  (index) => setState(() => this.index = index),
+        //  selectedIndex: index,
+        //  tabs: const [
+        //    GButton(
+        //      icon: Icons.home,
+        //      iconActiveColor: Colors.blue,
+        //      text: "Home",
+        //    ),
+        //    GButton(
+        //      icon: Icons.book,
+        //      iconActiveColor: Colors.green,
+        //      text: "Notes",
+        //    ),
+        //    GButton(
+        //      icon: Icons.quiz,
+        //      text: "Test Papers",
+        //      iconActiveColor: Colors.red,
+        //    ),
+        //    GButton(
+        //      icon: Icons.settings,
+        //      text: "Settings",
+        //      iconActiveColor: Colors.black,
+        //    ),
+        //  ]),
+        // persistentFooterButtons: const [NAV(),],
       ),
     ]);
     // ],

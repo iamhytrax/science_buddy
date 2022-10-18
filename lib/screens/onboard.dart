@@ -5,7 +5,6 @@ import 'package:introduction_screen/introduction_screen.dart';
 import 'package:science_buddy/home%20page/mobilebody.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-
 class ONBOARDSCREEN extends StatelessWidget {
   const ONBOARDSCREEN({super.key});
 
@@ -40,43 +39,31 @@ class ONBOARDSCREEN extends StatelessWidget {
                 decoration: getPageDecoration(),
               ),
               PageViewModel(
-                  title: "dsrfdsfsdfs",
-                  body: "hesjdgfhdsgfjhdsjgfdfsgh",
-                  image: buildImage("assets/images/physics.png"),
-                  decoration: getPageDecoration(),
-                  footer: GestureDetector(
-                    child: Container(
-                      color: Colors.amber,
-                      child: const Text("lets gooo",
-                          style: TextStyle(fontSize: 34)),
-                    ),
-                    onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => MOB()),
-                    ),
-                  )),
+                title: "dsrfdsfsdfs",
+                body: "hesjdgfhdsgfjhdsjgfdfsgh",
+                image: buildImage("assets/images/physics.png"),
+                decoration: getPageDecoration(),
+              ),
             ],
             done: const Icon(Icons.arrow_forward_ios),
             onDone: () async {
               // store value
-              final prefs =  await SharedPreferences.getInstance();
+              final prefs = await SharedPreferences.getInstance();
               prefs.setBool("showHome", true);
 
-             
-             Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => MOB()));
+              Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(builder: (context) => const MOB()));
             },
             showSkipButton: true,
             skip: const Text("SKIP"),
             next: const Icon(Icons.arrow_forward_ios_outlined),
             // ignore: avoid_print
-            onChange: (index) => print("print $index selected"),
+            onChange: (index) => print("$index selected"),
             globalBackgroundColor: Theme.of(context).canvasColor,
           ),
         ),
       );
 
- 
   Widget buildImage(String path) => Center(
         child: Image.asset(
           path,

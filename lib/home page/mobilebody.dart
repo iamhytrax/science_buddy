@@ -5,8 +5,10 @@ import 'package:science_buddy/home%20page/pdf/pdf1.dart';
 import 'package:science_buddy/sub/chem.dart';
 import 'package:science_buddy/sub/maths.dart';
 
-import 'package:science_buddy/sub/phy.dart';
+import 'package:science_buddy/sub/phy11.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+
+
 
 
 class MOB extends StatefulWidget {
@@ -17,7 +19,7 @@ class MOB extends StatefulWidget {
 }
 
 class _MOBState extends State<MOB> {
-  final List<Widget> pages = [const PHY(), const CHEM(), const MATHS()];
+  final List<Widget> pages = [const PHY11(), const CHEM(), const MATHS()];
 
   final _controller = PageController();
 
@@ -26,7 +28,7 @@ class _MOBState extends State<MOB> {
   // ignore: non_constant_identifier_names
   final Screens = [
     const MOB(),
-    const PHY(),
+    const PHY11(),
     const CHEM(),
     const MATHS(),
   ];
@@ -103,7 +105,7 @@ class _MOBState extends State<MOB> {
                           onTap: () => Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const PHY()),
+                                builder: (context) => const PHY11 ()),
                           ),
                         ),
                         GestureDetector(
@@ -329,7 +331,7 @@ class _MOBState extends State<MOB> {
                           onTap: () => Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const PDF2()),
+                                builder: (context) => const NOTES()),
                           ),
                         ),
                         const SizedBox(height: 2),
@@ -362,7 +364,7 @@ class _MOBState extends State<MOB> {
                           onTap: () => Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const PDF2()),
+                                builder: (context) => const NOTES()),
                           ),
                         ),
                       ]),
@@ -418,7 +420,7 @@ class _MOBState extends State<MOB> {
                               onTap: () => Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => const PHY()),
+                                    builder: (context) => const PHY11()),
                               ),
                             ),
                             const SizedBox(
@@ -447,7 +449,7 @@ class _MOBState extends State<MOB> {
                                   onTap: () => Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => const PHY()),
+                                        builder: (context) => const PHY11()),
                                   ),
                                 ),
                               ],

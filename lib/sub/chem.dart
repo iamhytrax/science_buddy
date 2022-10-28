@@ -1,279 +1,61 @@
+import 'package:clay_containers/widgets/clay_container.dart';
 import 'package:flutter/material.dart';
 
-import 'package:clay_containers/clay_containers.dart';
+
+import '../home page/pdf/pdf1.dart';
+
 
 class CHEM extends StatelessWidget {
-  const CHEM ({Key? key}) : super(key: key);
+  const CHEM({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey.shade300,
-      body: CustomScrollView(
-        slivers: [
-          SliverAppBar.large(
-            backgroundColor: Colors.grey.shade300,
-            title: const Center(
-              child: Text(
-                "PHYSICS",
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 28,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-            // actions: [
-            //   IconButton(
-            //       onPressed: () {},
-            //       icon: const Icon(
-            //         Icons.star_outline_sharp,
-            //         size: 30,
-            //       ))
-            // ],
-          ),
-          SliverToBoxAdapter(
-            child: SingleChildScrollView(
-              child: Column(
-                children: [
-                  const SizedBox(  
-                    height: 35,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                GestureDetector(
-                                  child: ClayContainer(
-                                    color: Colors.grey.shade300,
-                                    height: 70,
-                                    width: 290,
-                                    borderRadius: 39,
-                                    depth: 15,
-                                    spread: 6,
-                                    child: const Center(
-                                      child: Text(
-                                        'PHYSICS',
-                                        style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 25),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  const SizedBox(),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                     
-                      children: [
-                        Row(
-                          children: [
-                           
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                GestureDetector(
-                                  child: ClayContainer(
-                                    color: Colors.grey.shade300,
-                                    height: 70,
-                                    width: 290,
-                                    borderRadius: 39,
-                                    depth: 15,
-                                    spread: 6,
-                                    child: const Center(
-                                      child: Text(
-                                        'PHYSICS',
-                                        style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 25),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row( mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                           
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                GestureDetector(
-                                  child: ClayContainer(
-                                    color: Colors.grey.shade300,
-                                    height: 70,
-                                    width: 290,
-                                    borderRadius: 39,
-                                    depth: 15,
-                                    spread: 6,
-                                    child: const Center(
-                                      child: Text(
-                                        'PHYSICS',
-                                        style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 25),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                GestureDetector(
-                                  child: ClayContainer(
-                                    color: Colors.grey.shade300,
-                                    height: 70,
-                                    width: 290,
-                                    borderRadius: 39,
-                                    depth: 15,
-                                    spread: 6,
-                                    child: const Center(
-                                      child: Text(
-                                        'PHYSICS',
-                                        style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 25),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row( mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                GestureDetector(
-                                  child: ClayContainer(
-                                    color: Colors.grey.shade300,
-                                    height: 70,
-                                    width: 290,
-                                    borderRadius: 39,
-                                    depth: 15,
-                                    spread: 6,
-                                    child: const Center(
-                                      child: Text(
-                                        'PHYSICS',
-                                        style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 25),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, 
-                          children: [
-                            
-                            // ignore: sized_box_for_whitespace
 
-                            
-                            Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                GestureDetector(
-                                  child: ClayContainer(
-                                    color: Colors.grey.shade300,
-                                    height: 70,
-                                    width: 290,
-                                    borderRadius: 39,
-                                    depth: 15,
-                                    spread: 6,
-                                    child: const Center(
-                                      child: Text(
-                                        'PHYSICS',
-                                        style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 25),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
+      body: SingleChildScrollView(
+         scrollDirection: Axis.vertical,
+         child: Column(
+          children: [
+
+            
+                    const Padding(padding: EdgeInsets.all(10)),
+                    const SizedBox(
+                      width: 300,
                     ),
-                  ),
-                  const SizedBox(
-                    height: 35,
-                  ),
-                ],
-              ),
-            ),
-          )
-        ],
+                    GestureDetector(
+                      child: ClayContainer(
+                        color: Colors.grey.shade300,
+                        height: 80,
+                        width: 250,
+                        borderRadius: 39,
+                        depth: 30,
+                        spread: 4,
+                        child: const Center(
+                            child: Text(
+                          'PDF From Url',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 20),
+                        )),
+                      ),
+                      onTap: () => Navigator.push(
+                        context,
+                        MaterialPageRoute<dynamic>(
+                          builder: (_) => const PDFViewerCachedFromUrl(
+                            url:
+                                'https://sciencebuddy893527332.files.wordpress.com/2022/10/11-sl-ch-01-physical-world-copy.pdf',
+                          ),
+                        ),
+                      ),
+                    ),
+          ],
+
+
+
+
+
+         ),
       ),
+
     );
   }
 }

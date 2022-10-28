@@ -1,806 +1,119 @@
 import 'package:clay_containers/clay_containers.dart';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_cached_pdfview/flutter_cached_pdfview.dart';
 
-class PDF2 extends StatelessWidget {
-  const PDF2({super.key});
+import '../../sub/chem.dart';
+import '../../sub/phy11.dart';
+
+
+class NOTES extends StatelessWidget {
+  const NOTES ({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey.shade300,
-      body: CustomScrollView(
-        slivers: [
-          SliverAppBar.large(
-            backgroundColor: Colors.grey.shade300,
-            title: const Center(
-              child: Text(
-                "NOTES",
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 28,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-          ),
-          SliverToBoxAdapter(
-            child: SingleChildScrollView(
-              child: Column( 
-                children: [ 
-                  const Padding(padding: EdgeInsets.all(10)),
-                  const SizedBox(
-                    width: 300,
-                  ),
-                  GestureDetector(
-                    child: ClayContainer(
-                      color: Colors.grey.shade300,
-                      height: 80,
-                      width: 250,
-                      borderRadius: 39,
-                      depth: 30,
-                      spread: 4,
-                      child: const Center(
-                          child: Text(
-                        'PDF From Url',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20),
-                      )),
-                    ),
-                    onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute<dynamic>(
-                        builder: (_) => const PDFViewerCachedFromUrl(
-                          url:
-                              'https://sciencebuddy893527332.files.wordpress.com/2022/09/01.-python-crash-course_-a-hands-on-project-based-introduction-to-programming-pdfdrive-1.pdf',
-                        ),
-                      ),
-                    ),
-                  ),
-                  const Padding(padding: EdgeInsets.all(20)),
-                  const SizedBox(
-                    width: 300,
-                  ),
-                  GestureDetector(
-                    child: ClayContainer(
-                      color: Colors.grey.shade300,
-                      height: 80,
-                      width: 250,
-                      borderRadius: 39,
-                      depth: 30,
-                      spread: 4,
-                      child: const Center(
-                          child: Text(
-                        'PDF From Url',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20),
-                      )),
-                    ),
-                    onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute<dynamic>(
-                        builder: (_) => const PDFViewerCachedFromUrl(
-                          url:
-                              'https://sciencebuddy893527332.files.wordpress.com/2022/09/01.-python-crash-course_-a-hands-on-project-based-introduction-to-programming-pdfdrive-1.pdf',
-                        ),
-                      ),
-                    ),
-                  ),
-                  const Padding(padding: EdgeInsets.all(20)),
-                  const SizedBox(
-                    width: 300,
-                  ),
-                  GestureDetector(
-                    child: ClayContainer(
-                      color: Colors.grey.shade300,
-                      height: 80,
-                      width: 250,
-                      borderRadius: 39,
-                      depth: 30,
-                      spread: 4,
-                      child: const Center(
-                          child: Text(
-                        'PDF From Url',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20),
-                      )),
-                    ),
-                    onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute<dynamic>(
-                        builder: (_) => const PDFViewerCachedFromUrl(
-                          url:
-                              'https://sciencebuddy893527332.files.wordpress.com/2022/09/01.-python-crash-course_-a-hands-on-project-based-introduction-to-programming-pdfdrive-1.pdf',
-                        ),
-                      ),
-                    ),
-                  ),
-                  const Padding(padding: EdgeInsets.all(20)),
-                  const SizedBox(
-                    width: 300,
-                  ),
-                  GestureDetector(
-                    child: ClayContainer(
-                      color: Colors.grey.shade300,
-                      height: 80,
-                      width: 250,
-                      borderRadius: 39,
-                      depth: 30,
-                      spread: 4,
-                      child: const Center(
-                          child: Text(
-                        'PDF From Url',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20),
-                      )),
-                    ),
-                    onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute<dynamic>(
-                        builder: (_) => const PDFViewerCachedFromUrl(
-                          url:
-                              'https://sciencebuddy893527332.files.wordpress.com/2022/09/01.-python-crash-course_-a-hands-on-project-based-introduction-to-programming-pdfdrive-1.pdf',
-                        ),
-                      ),
-                    ),
-                  ),
-                  const Padding(padding: EdgeInsets.all(20)),
-                  const SizedBox(
-                    width: 300,
-                  ),
-                  GestureDetector(
-                    child: ClayContainer(
-                      color: Colors.grey.shade300,
-                      height: 80,
-                      width: 250,
-                      borderRadius: 39,
-                      depth: 30,
-                      spread: 4,
-                      child: const Center(
-                          child: Text(
-                        'PDF From Url',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20),
-                      )),
-                    ),
-                    onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute<dynamic>(
-                        builder: (_) => const PDFViewerCachedFromUrl(
-                          url:
-                              'https://sciencebuddy893527332.files.wordpress.com/2022/09/01.-python-crash-course_-a-hands-on-project-based-introduction-to-programming-pdfdrive-1.pdf',
-                        ),
-                      ),
-                    ),
-                  ),
-                  const Padding(padding: EdgeInsets.all(20)),
-                  const SizedBox(
-                    width: 300,
-                  ),
-                  GestureDetector(
-                    child: ClayContainer(
-                      color: Colors.grey.shade300,
-                      height: 80,
-                      width: 250,
-                      borderRadius: 39,
-                      depth: 30,
-                      spread: 4,
-                      child: const Center(
-                          child: Text(
-                        'PDF From Url',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20),
-                      )),
-                    ),
-                    onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute<dynamic>(
-                        builder: (_) => const PDFViewerCachedFromUrl(
-                          url:
-                              'https://sciencebuddy893527332.files.wordpress.com/2022/09/01.-python-crash-course_-a-hands-on-project-based-introduction-to-programming-pdfdrive-1.pdf',
-                        ),
-                      ),
-                    ),
-                  ),
-                  const Padding(padding: EdgeInsets.all(20)),
-                  const SizedBox(
-                    width: 300,
-                  ),
-                  GestureDetector(
-                    child: ClayContainer(
-                      color: Colors.grey.shade300,
-                      height: 80,
-                      width: 250,
-                      borderRadius: 39,
-                      depth: 30,
-                      spread: 4,
-                      child: const Center(
-                          child: Text(
-                        'PDF From Url',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20),
-                      )),
-                    ),
-                    onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute<dynamic>(
-                        builder: (_) => const PDFViewerCachedFromUrl(
-                          url:
-                              'https://sciencebuddy893527332.files.wordpress.com/2022/09/01.-python-crash-course_-a-hands-on-project-based-introduction-to-programming-pdfdrive-1.pdf',
-                        ),
-                      ),
-                    ),
-                  ),
-                  const Padding(padding: EdgeInsets.all(20)),
-                  const SizedBox(
-                    width: 300,
-                  ),
-                  GestureDetector(
-                    child: ClayContainer(
-                      color: Colors.grey.shade300,
-                      height: 80,
-                      width: 250,
-                      borderRadius: 39,
-                      depth: 30,  
-                      spread: 4,
-                      child: const Center(
-                          child: Text(
-                        'PDF From Url',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20),
-                      )),
-                    ),
-                    onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute<dynamic>(
-                        builder: (_) => const PDFViewerCachedFromUrl(
-                          url:
-                              'https://sciencebuddy893527332.files.wordpress.com/2022/09/01.-python-crash-course_-a-hands-on-project-based-introduction-to-programming-pdfdrive-1.pdf',
-                        ),
-                      ),
-                    ),
-                  ),
-                  const Padding(padding: EdgeInsets.all(20)),
-                  const SizedBox(
-                    width: 300,
-                  ),
-                  GestureDetector(
-                    child: ClayContainer(
-                      color: Colors.grey.shade300,
-                      height: 80,
-                      width: 250,
-                      borderRadius: 39,
-                      depth: 30,
-                      spread: 4,
-                      child: const Center(
-                          child: Text(
-                        'PDF From Url',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20),
-                      )),
-                    ),
-                    onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute<dynamic>(
-                        builder: (_) => const PDFViewerCachedFromUrl(
-                          url:
-                              'https://sciencebuddy893527332.files.wordpress.com/2022/09/01.-python-crash-course_-a-hands-on-project-based-introduction-to-programming-pdfdrive-1.pdf',
-                        ),
-                      ),
-                    ),
-                  ),
-                  
-                  const Padding(padding: EdgeInsets.all(20)),
-                  const SizedBox(
-                    width: 300,
-                  ),
-                  GestureDetector(
-                    child: ClayContainer(
-                      color: Colors.grey.shade300,
-                      height: 80,
-                      width: 250,
-                      borderRadius: 39,
-                      depth: 30,
-                      spread: 4,
-                      child: const Center(
-                          child: Text(
-                        'PDF From Url',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20),
-                      )),
-                    ),
-                    onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute<dynamic>(
-                        builder: (_) => const PDFViewerCachedFromUrl(
-                          url:
-                              'https://sciencebuddy893527332.files.wordpress.com/2022/09/01.-python-crash-course_-a-hands-on-project-based-introduction-to-programming-pdfdrive-1.pdf',
-                        ),
-                      ),
-                    ),
-                  ),
-                  
-                  const Padding(padding: EdgeInsets.all(20)),
-                  const SizedBox(
-                    width: 300,
-                  ),
-                  GestureDetector(
-                    child: ClayContainer(
-                      color: Colors.grey.shade300,
-                      height: 80,
-                      width: 250,
-                      borderRadius: 39,
-                      depth: 30,
-                      spread: 4,
-                      child: const Center(
-                          child: Text(
-                        'PDF From Url',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20),
-                      )),
-                    ),
-                    onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute<dynamic>(
-                        builder: (_) => const PDFViewerCachedFromUrl(
-                          url:
-                              'https://sciencebuddy893527332.files.wordpress.com/2022/09/01.-python-crash-course_-a-hands-on-project-based-introduction-to-programming-pdfdrive-1.pdf',
-                        ),
-                      ),
-                    ),
-                  ),
-                  
-                  const Padding(padding: EdgeInsets.all(20)),
-                  const SizedBox(
-                    width: 300,
-                  ),
-                  GestureDetector(
-                    child: ClayContainer(
-                      color: Colors.grey.shade300,
-                      height: 80,
-                      width: 250,
-                      borderRadius: 39,
-                      depth: 30,
-                      spread: 4,
-                      child: const Center(
-                          child: Text(
-                        'PDF From Url',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20),
-                      )),
-                    ),
-                    onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute<dynamic>(
-                        builder: (_) => const PDFViewerCachedFromUrl(
-                          url:
-                              'https://sciencebuddy893527332.files.wordpress.com/2022/09/01.-python-crash-course_-a-hands-on-project-based-introduction-to-programming-pdfdrive-1.pdf',
-                        ),
-                      ),
-                    ),
-                  ),
-                  
-                  const Padding(padding: EdgeInsets.all(20)),
-                  const SizedBox(
-                    width: 300,
-                  ),
-                  GestureDetector(
-                    child: ClayContainer(
-                      color: Colors.grey.shade300,
-                      height: 80,
-                      width: 250,
-                      borderRadius: 39,
-                      depth: 30,
-                      spread: 4,
-                      child: const Center(
-                          child: Text(
-                        'PDF From Url',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20),
-                      )),
-                    ),
-                    onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute<dynamic>(
-                        builder: (_) => const PDFViewerCachedFromUrl(
-                          url:
-                              'https://sciencebuddy893527332.files.wordpress.com/2022/09/01.-python-crash-course_-a-hands-on-project-based-introduction-to-programming-pdfdrive-1.pdf',
-                        ),
-                      ),
-                    ),
-                  ),
-                  
-                  const Padding(padding: EdgeInsets.all(20)),
-                  const SizedBox(
-                    width: 300,
-                  ),
-                  GestureDetector(
-                    child: ClayContainer(
-                      color: Colors.grey.shade300,
-                      height: 80,
-                      width: 250,
-                      borderRadius: 39,
-                      depth: 30,
-                      spread: 4,
-                      child: const Center(
-                          child: Text(
-                        'PDF From Url',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20),
-                      )),
-                    ),
-                    onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute<dynamic>(
-                        builder: (_) => const PDFViewerCachedFromUrl(
-                          url:
-                              'https://sciencebuddy893527332.files.wordpress.com/2022/09/01.-python-crash-course_-a-hands-on-project-based-introduction-to-programming-pdfdrive-1.pdf',
-                        ),
-                      ),
-                    ),
-                  ),
-                  
-                  const Padding(padding: EdgeInsets.all(20)),
-                  const SizedBox(
-                    width: 300,
-                  ),
-                  GestureDetector(
-                    child: ClayContainer(
-                      color: Colors.grey.shade300,
-                      height: 80,
-                      width: 250,
-                      borderRadius: 39,
-                      depth: 30,
-                      spread: 4,
-                      child: const Center(
-                          child: Text(
-                        'PDF From Url',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20),
-                      )),
-                    ),
-                    onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute<dynamic>(
-                        builder: (_) => const PDFViewerCachedFromUrl(
-                          url:
-                              'https://sciencebuddy893527332.files.wordpress.com/2022/09/01.-python-crash-course_-a-hands-on-project-based-introduction-to-programming-pdfdrive-1.pdf',
-                        ),
-                      ),
-                    ),
-                  ),
-                  const Padding(padding: EdgeInsets.all(20)),
-                  const SizedBox(
-                    width: 300,
-                  ),
-                  GestureDetector(
-                    child: ClayContainer(
-                      color: Colors.grey.shade300,
-                      height: 80,
-                      width: 250,
-                      borderRadius: 39,
-                      depth: 30,
-                      spread: 4,
-                      child: const Center(
-                          child: Text(
-                        'PDF From Url',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20),
-                      )),
-                    ),
-                    onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute<dynamic>(
-                        builder: (_) => const PDFViewerCachedFromUrl(
-                          url:
-                              'https://sciencebuddy893527332.files.wordpress.com/2022/09/01.-python-crash-course_-a-hands-on-project-based-introduction-to-programming-pdfdrive-1.pdf',
-                        ),
-                      ),
-                    ),
-                  ),
-                  const Padding(padding: EdgeInsets.all(20)),
-                  const SizedBox(
-                    width: 300,
-                  ),
-                  GestureDetector(
-                    child: ClayContainer(
-                      color: Colors.grey.shade300,
-                      height: 80,
-                      width: 250,
-                      borderRadius: 39,
-                      depth: 30,
-                      spread: 4,
-                      child: const Center(
-                          child: Text(
-                        'PDF From Url',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20),
-                      )),
-                    ),
-                    onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute<dynamic>(
-                        builder: (_) => const PDFViewerCachedFromUrl(
-                          url:
-                              'https://sciencebuddy893527332.files.wordpress.com/2022/09/01.-python-crash-course_-a-hands-on-project-based-introduction-to-programming-pdfdrive-1.pdf',
-                        ),
-                      ),
-                    ),
-                  ),
-                  const Padding(padding: EdgeInsets.all(20)),
-                  const SizedBox(
-                    width: 300,
-                  ),
-                  GestureDetector(
-                    child: ClayContainer(
-                      color: Colors.grey.shade300,
-                      height: 80,
-                      width: 250,
-                      borderRadius: 39,
-                      depth: 30,
-                      spread: 4,
-                      child: const Center(
-                          child: Text(
-                        'PDF From Url',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20),
-                      )),
-                    ),
-                    onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute<dynamic>(
-                        builder: (_) => const PDFViewerCachedFromUrl(
-                          url:
-                              'https://sciencebuddy893527332.files.wordpress.com/2022/09/01.-python-crash-course_-a-hands-on-project-based-introduction-to-programming-pdfdrive-1.pdf',
-                        ),
-                      ),
-                    ),
-                  ),
-                  const Padding(padding: EdgeInsets.all(20)),
-                  const SizedBox(
-                    width: 300,
-                  ),
-                  GestureDetector(
-                    child: ClayContainer(
-                      color: Colors.grey.shade300,
-                      height: 80,
-                      width: 250,
-                      borderRadius: 39,
-                      depth: 30,
-                      spread: 4,
-                      child: const Center(
-                          child: Text(
-                        'PDF From Url',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20),
-                      )),
-                    ),
-                    onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute<dynamic>(
-                        builder: (_) => const PDFViewerCachedFromUrl(
-                          url:
-                              'https://sciencebuddy893527332.files.wordpress.com/2022/09/01.-python-crash-course_-a-hands-on-project-based-introduction-to-programming-pdfdrive-1.pdf',
-                        ),
-                      ),
-                    ),
-                  ),
-                  const Padding(padding: EdgeInsets.all(20)),
-                  const SizedBox(
-                    width: 300,
-                  ),
-                  GestureDetector(
-                    child: ClayContainer(
-                      color: Colors.grey.shade300,
-                      height: 80,
-                      width: 250,
-                      borderRadius: 39,
-                      depth: 30,
-                      spread: 4,
-                      child: const Center(
-                          child: Text(
-                        'PDF From Url',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20),
-                      )),
-                    ),
-                    onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute<dynamic>(
-                        builder: (_) => const PDFViewerCachedFromUrl(
-                          url:
-                              'https://sciencebuddy893527332.files.wordpress.com/2022/09/01.-python-crash-course_-a-hands-on-project-based-introduction-to-programming-pdfdrive-1.pdf',
-                        ),
-                      ),
-                    ),
-                  ),
-                  const Padding(padding: EdgeInsets.all(20)),
-                  const SizedBox(
-                    width: 300,
-                  ),
-                  GestureDetector(
-                    child: ClayContainer(
-                      color: Colors.grey.shade300,
-                      height: 80,
-                      width: 250,
-                      borderRadius: 39,
-                      depth: 30,
-                      spread: 4,
-                      child: const Center(
-                          child: Text(
-                        'PDF From Url',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20),
-                      )),
-                    ),
-                    onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute<dynamic>(
-                        builder: (_) => const PDFViewerCachedFromUrl(
-                          url:
-                              'https://sciencebuddy893527332.files.wordpress.com/2022/09/01.-python-crash-course_-a-hands-on-project-based-introduction-to-programming-pdfdrive-1.pdf',
-                        ),
-                      ),
-                    ),
-                  ),
-                  const Padding(padding: EdgeInsets.all(20)),
-                  const SizedBox(
-                    width: 300,
-                  ),
-                  GestureDetector(
-                    child: ClayContainer(
-                      color: Colors.grey.shade300,
-                      height: 80,
-                      width: 250,
-                      borderRadius: 39,
-                      depth: 30,
-                      spread: 4,
-                      child: const Center(
-                          child: Text(
-                        'PDF From Url',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20),
-                      )),
-                    ),
-                    onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute<dynamic>(
-                        builder: (_) => const PDFViewerCachedFromUrl(
-                          url:
-                              'https://sciencebuddy893527332.files.wordpress.com/2022/09/01.-python-crash-course_-a-hands-on-project-based-introduction-to-programming-pdfdrive-1.pdf',
-                        ),
-                      ),
-                    ),
-                  ),
-                  const Padding(padding: EdgeInsets.all(20)),
-                  const SizedBox(
-                    width: 300,
-                  ),
-                  GestureDetector(
-                    child: ClayContainer(
-                      color: Colors.grey.shade300,
-                      height: 80,
-                      width: 250,
-                      borderRadius: 39,
-                      depth: 30,
-                      spread: 4,
-                      child: const Center(
-                          child: Text(
-                        'PDF From Url',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20),
-                      )),
-                    ),
-                    onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute<dynamic>(
-                        builder: (_) => const PDFViewerCachedFromUrl(
-                          url:
-                              'https://sciencebuddy893527332.files.wordpress.com/2022/09/01.-python-crash-course_-a-hands-on-project-based-introduction-to-programming-pdfdrive-1.pdf',
-                        ),
-                      ),
-                    ),
-                  ),
-                  const Padding(padding: EdgeInsets.all(20)),
-                  const SizedBox(
-                    width: 300,
-                  ),
-                  GestureDetector(
-                    child: ClayContainer(
-                      color: Colors.grey.shade300,
-                      height: 80,
-                      width: 250,
-                      borderRadius: 39,
-                      depth: 30,
-                      spread: 4,
-                      child: const Center(
-                          child: Text(
-                        'PDF From Url',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20),
-                      )),
-                    ),
-                    onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute<dynamic>(
-                        builder: (_) => const PDFViewerCachedFromUrl(
-                          url:
-                              'https://sciencebuddy893527332.files.wordpress.com/2022/09/01.-python-crash-course_-a-hands-on-project-based-introduction-to-programming-pdfdrive-1.pdf',
-                        ),
-                      ),
-                    ),
-                  ),
-                  const Padding(padding: EdgeInsets.all(20)),
-                  const SizedBox(
-                    width: 300,
-                  ),
-                  GestureDetector(
-                    child: ClayContainer(
-                      color: Colors.grey.shade300,
-                      height: 80,
-                      width: 250,
-                      borderRadius: 39,
-                      depth: 30,
-                      spread: 4,
-                      child: const Center(
-                          child: Text(
-                        'PDF From Url',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20),
-                      )),
-                    ),
-                    onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute<dynamic>(
-                        builder: (_) => const PDFViewerCachedFromUrl(
-                          url:
-                              'https://sciencebuddy893527332.files.wordpress.com/2022/09/01.-python-crash-course_-a-hands-on-project-based-introduction-to-programming-pdfdrive-1.pdf',
-                        ),
-                      ),
-                    ),
-                  ),
-                  const Padding(padding: EdgeInsets.all(20)),
-                  const SizedBox(
-                    width: 300,
-                  ),
-                  GestureDetector(
-                    child: ClayContainer(
-                      color: Colors.grey.shade300,
-                      height: 80,
-                      width: 250,
-                      borderRadius: 39,
-                      depth: 30,
-                      spread: 4,
-                      child: const Center(
-                          child: Text(
-                        'PDF From Url',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20),
-                      )),
-                    ),
-                    onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute<dynamic>(
-                        builder: (_) => const PDFViewerCachedFromUrl(
-                          url:
-                              'https://sciencebuddy893527332.files.wordpress.com/2022/09/01.-python-crash-course_-a-hands-on-project-based-introduction-to-programming-pdfdrive-1.pdf',
-                        ),
-                      ),
-                    ),
-                  ),
-                  
+      body: SingleChildScrollView(child: Column(
 
-                 const  SizedBox(
-                    height: 30, 
-                  )
-                ],
-              ),
-            ),
-          )
-        ],
-      ),
-    );
+                  children: [    
+                    const Padding(padding: EdgeInsets.all(10)),
+                    const SizedBox(
+                      width: 300,
+                    ),
+                    GestureDetector(
+                      child: ClayContainer(
+                        color: Colors.grey.shade300,
+                        height: 80,
+                        width: 250,
+                        borderRadius: 39,
+                        depth: 30,
+                        spread: 4,
+                        child: const Center(
+                            child: Text(
+                          'PDF From Url',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 20),
+                        )),
+                      ),
+                      onTap: () => Navigator.push(
+                        context,
+                        MaterialPageRoute<dynamic>(
+                          builder: (_) => const PDFViewerCachedFromUrl(
+                            url:
+                                'https://sciencebuddy893527332.files.wordpress.com/2022/10/11-sl-ch-01-physical-world-copy.pdf',
+                          ),
+                        ),
+                      ),
+                    ),
+                    const Padding(padding: EdgeInsets.all(20)),
+                    const SizedBox(
+                      width: 300,
+                    ),
+                           GestureDetector(
+                      child: ClayContainer(
+                        color: Colors.grey.shade300,
+                        height: 80,
+                        width: 250,
+                        borderRadius: 39,
+                        depth: 30,
+                        spread: 4,
+                        child: const Center(
+                            child: Text(
+                          'PDF From Url',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 20),
+                        )),
+                      ),
+                      onTap: () => Navigator.push(
+                        context,
+                        MaterialPageRoute<dynamic>(
+                          builder: (_) => const PDFViewerCachedFromUrl(
+                            url:
+                                'https://sciencebuddy893527332.files.wordpress.com/2022/10/11-sl-ch-02-units-and-measurements.pdf',
+                          ),
+                        ),
+                      ),
+                    ),
+                    const Padding(padding: EdgeInsets.all(20)),
+                    const SizedBox(
+                      width: 300,
+                    ),
+                           GestureDetector(
+                      child: ClayContainer(
+                        color: Colors.grey.shade300,
+                        height: 80,
+                        width: 250,
+                        borderRadius: 39,
+                        depth: 30,
+                        spread: 4,
+                        child: const Center(
+                            child: Text(
+                          'PDF From Url',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 20),
+                        )),
+                      ),
+                      onTap: () => Navigator.push(
+                        context,
+                        MaterialPageRoute<dynamic>(
+                          builder: (_) => const PDFViewerCachedFromUrl(
+                            url:
+                                'https://sciencebuddy893527332.files.wordpress.com/2022/10/11-sl-ch-03-motion-in-a-straight-line.pdf',
+                          ),
+                        ),
+                      ),
+                    ),
+                    const Padding(padding: EdgeInsets.all(20)),
+                    const SizedBox(
+                      width: 300,
+                    ),
+                          
+                  ],
+
+
+      ),));
+       
+              
   }
 }
 
@@ -830,20 +143,25 @@ class PDFViewerCachedFromUrl extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Cached PDF From Url'),
+        title: const Text('NOTES'),
       ),
-      body: const PDF(
+      body:  const PDF(
         enableSwipe: true,
         swipeHorizontal: false,
-        autoSpacing: false,
+        autoSpacing: false, 
         pageFling: false,
         nightMode: false,
-        pageSnap: false,
+        pageSnap: true,
+   
       ).cachedFromUrl(
         url,
         placeholder: (double progress) => Center(child: Text('$progress %')),
-        errorWidget: (dynamic error) => Center(child: Text(error.toString())),
-      ),
+        errorWidget: (dynamic error) => const Center(child: Text("""                      Failed to load.
+       check  your internet connection and try again""",
+      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+      )),
+      ), 
     );
   }
 }
+ 

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:science_buddy/home%20page/mobilebody.dart';
-import 'package:science_buddy/screens/brainmap.dart';
+
 
 import 'package:science_buddy/screens/onboard.dart';
 
@@ -15,7 +15,6 @@ void main() async {
 
   SystemChrome.setPreferredOrientations(
       [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
-
   runApp(MyApp(showHome: showHome));
 }
 
@@ -29,7 +28,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "science buddy",
-      home: showHome ? const PlayMaterial(): const ONBOARDSCREEN(),
+      home: showHome ? const MOB(): const ONBOARDSCREEN(),
       theme: ThemeData(
           useMaterial3: true,
           appBarTheme: AppBarTheme(

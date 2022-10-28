@@ -1,5 +1,6 @@
 {
     "yaml.schemas": {
         "https://json.schemastore.org/pubspec.json": "file:///f%3A/1.android_development/PROJECTS/science_buddy/pubspec.yaml"
-    }
+    },
+    "editor.guides.bracketPairs": "active"
 }

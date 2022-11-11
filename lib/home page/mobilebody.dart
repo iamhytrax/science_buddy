@@ -1,12 +1,12 @@
 import 'package:clay_containers/widgets/clay_container.dart';
 import 'package:flutter/material.dart';
+import 'package:science_buddy/util/notes.dart';
+import 'package:science_buddy/util/tabm1.dart';
 
-import 'package:science_buddy/home%20page/pdf/pdf1.dart';
-import 'package:science_buddy/sub/chem.dart';
-import 'package:science_buddy/sub/maths.dart';
-
-import 'package:science_buddy/sub/phy11.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+
+import '../util/tabc1.dart';
+import '../util/tabp1.dart';
 
 
 
@@ -19,19 +19,10 @@ class MOB extends StatefulWidget {
 }
 
 class _MOBState extends State<MOB> {
-  final List<Widget> pages = [const PHY11(), const CHEM(), const MATHS()];
+  final List<Widget> pages = [const TABP1(), const TABC1(), const TABM1()];
 
   final _controller = PageController();
 
-  int index = 0;
-
-  // ignore: non_constant_identifier_names
-  final Screens = [
-    const MOB(),
-    const PHY11(),
-    const CHEM(),
-    const MATHS(),
-  ];
 
   @override
   Widget build(BuildContext context) {
@@ -45,12 +36,14 @@ class _MOBState extends State<MOB> {
           shrinkWrap: true,
           slivers: [
             SliverAppBar.large(
-              title: const Text(
-                "Science Buddy ",
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 28,
-                  fontWeight: FontWeight.bold,
+              title: const Center(
+                child:  Text(
+                  "Science Buddy ",
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 28,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
               actions: [
@@ -105,7 +98,7 @@ class _MOBState extends State<MOB> {
                           onTap: () => Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const PHY11 ()),
+                                builder: (context) =>  const TABP1 ()),
                           ),
                         ),
                         GestureDetector(
@@ -136,7 +129,7 @@ class _MOBState extends State<MOB> {
                           onTap: () => Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const CHEM()),
+                                builder: (context) => const TABC1()),
                           ),
                         ),
                         GestureDetector(
@@ -168,7 +161,7 @@ class _MOBState extends State<MOB> {
                           onTap: () => Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const MATHS()),
+                                builder: (context) => const TABM1()),
                           ),
                         ),
                         Container(
@@ -420,7 +413,7 @@ class _MOBState extends State<MOB> {
                               onTap: () => Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => const PHY11()),
+                                    builder: (context) => const TABP1()),
                               ),
                             ),
                             const SizedBox(
@@ -442,14 +435,14 @@ class _MOBState extends State<MOB> {
                                         'PHYSICS',
                                         style: TextStyle(
                                             fontWeight: FontWeight.bold,
-                                            fontSize: 25),
+                                            fontSize: 22),
                                       ),
                                     ),
                                   ),
                                   onTap: () => Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => const PHY11()),
+                                        builder: (context) => const TABP1()),
                                   ),
                                 ),
                               ],
@@ -485,7 +478,7 @@ class _MOBState extends State<MOB> {
                               onTap: () => Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => const CHEM()),
+                                    builder: (context) => const TABC1()),
                               ),
                             ),
                             const SizedBox(
@@ -507,14 +500,14 @@ class _MOBState extends State<MOB> {
                                         'CHEMISTEY',
                                         style: TextStyle(
                                             fontWeight: FontWeight.bold,
-                                            fontSize: 25),
+                                            fontSize: 22),
                                       ),
                                     ),
                                   ),
                                   onTap: () => Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => const CHEM()),
+                                        builder: (context) => const TABC1()),
                                   ),
                                 )
                               ],
@@ -551,7 +544,7 @@ class _MOBState extends State<MOB> {
                               onTap: () => Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => const MATHS()),
+                                    builder: (context) => const TABM1()),
                               ),
                             ),
                             const SizedBox(
@@ -573,14 +566,15 @@ class _MOBState extends State<MOB> {
                                         'MATHEMATICS',
                                         style: TextStyle(
                                             fontWeight: FontWeight.bold,
-                                            fontSize: 25),
+                                            fontSize: 22),
                                       ),
                                     ),
                                   ),
                                   onTap: () => Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => const MATHS()),
+                                        builder: (context) => const TABM1(),
+                                        ),
                                   ),
                                 )
                               ],
@@ -632,7 +626,7 @@ class _MOBState extends State<MOB> {
                                         'TEST PAPERS',
                                         style: TextStyle(
                                             fontWeight: FontWeight.bold,
-                                            fontSize: 25),
+                                            fontSize: 22),
                                       ),
                                     ),
                                   ),
@@ -653,7 +647,7 @@ class _MOBState extends State<MOB> {
         //bottomNavigationBar: NavigationBarTheme(
         //  data: NavigationBarThemeData(
         //      indicatorColor: Colors.amber,
-        //      labelTextStyle: MaterialStateProperty.all(
+        //      labelTextStyle: MaterialStateProperty.all( 
         //          const TextStyle(fontSize: 14, fontWeight: FontWeight.bold))),
         //  child: NavigationBar(
         //    labelBehavior: NavigationDestinationLabelBehavior.onlyShowSelected,

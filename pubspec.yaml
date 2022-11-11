@@ -30,9 +30,8 @@ environment:
 
 dependencies:
   cupertino_icons: ^1.0.2
-  flutter:
-    sdk: flutter
-  google_nav_bar: ^5.0.6
+  flutter: 
+    sdk: flutter 
   smooth_page_indicator:
   flutter_cached_pdfview: ^0.4.1
   path_provider: ^2.0.11
@@ -40,10 +39,13 @@ dependencies:
   introduction_screen: 
   shared_preferences: ^2.0.15
   syncfusion_flutter_pdfviewer: ^20.3.48
-  carousel_slider: ^4.0.0
-  play_kit: ^0.0.2
-  persistent_bottom_nav_bar: any
-  
+  carousel_slider: ^4.1.1
+  animated_notch_bottom_bar: ^0.0.1
+  flutter_svg: ^1.1.6
+ 
+
+
+ 
 dev_dependencies:  
   flutter_lints: ^2.0.0
   flutter_test:
@@ -71,9 +73,8 @@ flutter:
     - assets/images/math.png
     - assets/images/chem.png
     - assets/images/physics.png
-    - assets/images/test.png
+    - assets/images/test.png 
 
-  #   - assets/images/
   #   - assets/images/
   #   - assets/images/
   #   - assets/images/
